@@ -1,9 +1,12 @@
-
+import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
     <div className="App">
-     Awesome builder by Keremet Kerimova
+      <Layout>
+        <h1>Awesome builder by Keremet Kerimova</h1>
+      </Layout>
+     
     </div>
   );
 }
