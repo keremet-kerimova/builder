@@ -1,8 +1,9 @@
-import classes from "../DrawerOpen/DrawerOpen"
+import classes from "./DrawerOpen.module.css";
 
- const DrawerOpen = () => {
-     return(
-         <div className={classes.DrawerOpen} onClick={}>Drawer</div>
-     );
- }
- export default DrawerOpen;
+const DrawerOpen = ({ click }) => {
+  return (
+    <div className={classes.DrawerOpen} onClick={click}>Drawer</div>
+  );
+}
+
+export default DrawerOpen;
