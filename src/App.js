@@ -1,12 +1,12 @@
 import Layout from "./components/Layout/Layout";
 import "./App.css"
+
 function App() {
   return (
     <div className="App">
       <Layout>
-        <h1>Awesome builder by Keremet Kerimova</h1>
+        Pizza Builder by master Kerimova Keremet<br />
       </Layout>
-     
     </div>
   );
 }
