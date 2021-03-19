@@ -2,25 +2,23 @@ import Logo from "../Logo/Logo"
 import Nav from  "../Nav/Nav"
 import classes from "./Drawer.module.css"
 import Backdrop from "../Ul/Backdrop/Backdrop"
-import { useState } from "react"
 
-const Drawer = () => {
- const [drawerOpen, setDrawerOpen]= useState(false);
 
-  const drawerClasses =[
-      classes.content,
-      drawerOpen ? classes.open : classes.close
+const Drawer = ({ open, closeDrawer }) => {
+  const drawerClasses = [
+    classes.content,
+    open ? classes.open : classes.close
   ];
-  
 
-    return (
-        <div className={classes.Drawer}>
-            <Backdrop show={} />
-            <div className={drawerClasses.join(" ")}/>
-            <Logo />
-            <Nav />
-            
-        </div>
-    );
+  return (
+    <div className={classes.Drawer}>
+      <Backdrop show={open} click={closeDrawer} />
+      <div className={drawerClasses.join(" ")}>
+        <Logo />
+        <Nav />
+      </div>
+    </div>
+  );
 }
- export default Drawer
+ 
+export default Drawer;
