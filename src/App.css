@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Gorditas&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Gorditas&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
 
 *{
     box-sizing: border-box;
@@ -9,6 +10,7 @@
     margin: 0;
     /* font-family: 'Niconne', cursive; */
     /* font-family: 'Pacifico', cursive;; */
-    font-family: 'Gorditas', cursive;
+    /* font-family: 'Gorditas', cursive; */
+    font-family: 'Miniver', cursive;
   
 }
