@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        Pizza Builder by master Kerimova Keremet<br />
+        Builder by master Kerimova Keremet<br />
       </Layout>
     </div>
   );
