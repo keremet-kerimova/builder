@@ -1,18 +1,24 @@
-import DriedfruitsIngredient from "../DriedFruitsIngredient/DriedFruitsIngredient.js";
-import classes from "./DriedFruitsPreview.module.css";
+import classes from "./DriedFruitsBuilder.module.css" 
+import DriedFruitsPreview from "./DriedFruitsPreview/DriedFruitsPreveiws";
+import ingredientsBackground from "../../../images/cheese.svg";
 
-const DriedFruitsPreview = ({ ingredients}) => {
-   const result = [];
-
-   for (const ingredient in ingredients) {
+const DriedFruitsPreview = ({ ingredients }) => {
+  const result = [];
+  for (const ingredient in ingredients) {
     for (let i = 0; i < ingredients[ingredient]; i++) {
-        result.push(<DriedfruitsIngredient type={ingredient} />)
+      result.push(<DriedFruitsIngredient type={ingredient} />)
     }
-   }
-   return (
-       <div className={classes.DriedFruitsPreview}>
-           {result}
-       </div>
-   )
+  }
+
+  return (
+    <div className={classes.DriedFruitsPreview }>
+      <div
+        className={classes.ingredients}
+        style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+        {result}
+      </div>
+    </div>
+  );
 }
-export default DriedFruitsPreview;
+
+export default DriedFruitsPreview ;
