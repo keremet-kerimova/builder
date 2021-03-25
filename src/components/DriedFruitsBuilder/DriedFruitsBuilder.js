@@ -1,7 +1,7 @@
 import classes from "./DriedFruitsBuilder.module.css";
-import DriedFruitsPreview from "./DriedFruitsPreview/DriedFruitsPreveiws";
+import DriedFruitsPreviews from "./DriedFruitsPreviews/DriedFruitsPreviews";
 import DriedFruitsControls from "./DriedFruitsControls/DriedFruitsControls";
-import DriedFruitsPreviews from "./DriedFruitsPreview/DriedFruitsPreveiws";
+
 
 const DriedFruitsBuilder = () => {
   const ingredients = {

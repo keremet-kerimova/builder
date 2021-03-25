@@ -1,6 +1,5 @@
-import classes from "./DriedFruitsBuilder.module.css" 
-import DriedFruitsPreviews from "./DriedFruitsPreview/DriedFruitsPreveiws";
-import ingredientsBackground from "../../../images/cheese.svg";
+import DriedFruitsIngredient from "../DriedFruitsIngredient/DriedFruitsIngredient";
+import classes from "./DriedFruitsPreviews.module.css";
 
 const DriedFruitsPreviews = ({ ingredients }) => {
   const result = [];
@@ -11,7 +10,7 @@ const DriedFruitsPreviews = ({ ingredients }) => {
   }
 
   return (
-    <div className={classes.DriedFruitsPreview }>
+    <div className={classes.DriedFruitsPreviews}>
       <div
         className={classes.ingredients}
         style={{ backgroundImage: `url(${ingredientsBackground})` }}>
@@ -21,4 +20,4 @@ const DriedFruitsPreviews = ({ ingredients }) => {
   );
 }
 
-export default DriedFruitsPreviews ;
+export default DriedFruitsPreviews;
