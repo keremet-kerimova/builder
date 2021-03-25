@@ -1,8 +1,8 @@
 import classes from "./DriedFruitsBuilder.module.css" 
-import DriedFruitsPreview from "./DriedFruitsPreview/DriedFruitsPreveiws";
+import DriedFruitsPreviews from "./DriedFruitsPreview/DriedFruitsPreveiws";
 import ingredientsBackground from "../../../images/cheese.svg";
 
-const DriedFruitsPreview = ({ ingredients }) => {
+const DriedFruitsPreviews = ({ ingredients }) => {
   const result = [];
   for (const ingredient in ingredients) {
     for (let i = 0; i < ingredients[ingredient]; i++) {
@@ -21,4 +21,4 @@ const DriedFruitsPreview = ({ ingredients }) => {
   );
 }
 
-export default DriedFruitsPreview ;
+export default DriedFruitsPreviews ;

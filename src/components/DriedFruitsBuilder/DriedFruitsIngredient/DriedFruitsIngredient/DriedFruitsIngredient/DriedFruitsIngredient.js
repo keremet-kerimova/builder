@@ -45,7 +45,7 @@ const DriedFruitsIngredient = ({ type }) => {
   types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
   return (
-    <div className={classes.PizzaIngredient} style={types[type]}></div>
+    <div className={classes.DriedFruitsIngredient} style={types[type]}></div>
   );
 }
 

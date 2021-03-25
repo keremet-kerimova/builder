@@ -1,6 +1,7 @@
 import classes from "./DriedFruitsBuilder.module.css";
 import DriedFruitsPreview from "./DriedFruitsPreview/DriedFruitsPreveiws";
 import DriedFruitsControls from "./DriedFruitsControls/DriedFruitsControls";
+import DriedFruitsPreviews from "./DriedFruitsPreview/DriedFruitsPreveiws";
 
 const DriedFruitsBuilder = () => {
   const ingredients = {
@@ -14,7 +15,7 @@ const DriedFruitsBuilder = () => {
 
   return (
     <div className={classes.DriedFruitsBuilder}>
-      <DriedFruitsPreview ingredients={ingredients} />
+      <DriedFruitsPreviews ingredients={ingredients} />
       <DriedFruitsControls />
     </div>
   );
