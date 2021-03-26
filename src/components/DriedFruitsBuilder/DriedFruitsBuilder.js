@@ -1,22 +1,23 @@
 import classes from "./DriedFruitsBuilder.module.css";
 import DriedFruitsPreviews from "./DriedFruitsPreviews/DriedFruitsPreviews";
 import DriedFruitsControls from "./DriedFruitsControls/DriedFruitsControls";
+import { useState } from "react";
 
 
 const DriedFruitsBuilder = () => {
-  const ingredients = {
+  const [ingredients, setIngredients] = useState ({
     tomato: 20,
     salami: 20,
     greenOlive: 20,
     blackOlive: 20,
     redPepper: 20,
     yellowPepper: 15,
-  };
+  });
 
   return (
     <div className={classes.DriedFruitsBuilder}>
       <DriedFruitsPreviews ingredients={ingredients} />
-      <DriedFruitsControls />
+      <DriedFruitsControls  ingredients={ingredients} />
     </div>
   );
 }
