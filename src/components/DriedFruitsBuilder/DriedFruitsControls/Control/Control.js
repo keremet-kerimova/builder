@@ -1,11 +1,11 @@
 import classes from "./Control.module.css"
 
-const Control = ({type}) =>{
+const Control = ({type, addIngredient, removeIngredient}) =>{
     return(
         <div className={classes.Control}>
-           <button>+</button>
-           {type}
-           <button>-</button>
+           <button onClick={()=> addIngredient(type)}>+</button>
+           <DriedFruitsIngredient type={type} />
+           <button onClick={()=> removeIngredient(type)}>-</button>
         </div>
     )
 }
