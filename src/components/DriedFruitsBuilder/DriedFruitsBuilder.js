@@ -14,10 +14,23 @@ const DriedFruitsBuilder = () => {
     yellowPepper: 15,
   });
 
+  function addIngredient(type){
+   const newIngredient = { ...ingredients };
+   newIngredient[type]++;
+   setIngredients(newIngredients);
+  }
+
+  function removeIngredient(type){
+    const newIngredient = { ...ingredients };
+    newIngredient[type]--;
+    setIngredients(newIngredients);
+   }
+  
+
   return (
     <div className={classes.DriedFruitsBuilder}>
       <DriedFruitsPreviews ingredients={ingredients} />
-      <DriedFruitsControls  ingredients={ingredients} />
+      <DriedFruitsControls  ingredients={ingredients}  addIngredient = {addIngredient} removeIngredient ={removeIngredient} />
     </div>
   );
 }
