@@ -52,12 +52,3 @@ const DriedFruitsIngredient = ({ type }) => {
 
 export default DriedFruitsIngredient;
 
-// import classes from "./DriedFruitsIngredient.module.css";
-
-// const DriedFruitsIngredient = () => {
-//   return (
-//     <div className={classes.DriedFruitsIngredient}>Ing</div>
-//   );
-// }
-
-// export default DriedFruitsIngredient;
