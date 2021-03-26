@@ -1,4 +1,5 @@
 import classes from "./Control.module.css"
+import DriedFruitsIngredient from "../../DriedFruitsIngredient/DriedFruitsIngredient/DriedFruitsIngredient/DriedFruitsIngredient"
 
 const Control = ({type, addIngredient, removeIngredient}) =>{
     return(

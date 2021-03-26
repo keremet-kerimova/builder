@@ -1,4 +1,5 @@
 import classes from "./DriedFruitsIngredient.module.css";
+import react from "react";
 
 // import salamiBackground from "../../../images/salami.svg";
 // import tomatoBackground from "../../../images/tomato.svg";
@@ -50,5 +51,5 @@ const DriedFruitsIngredient = ({ type }) => {
 }
 
 
-export default DriedFruitsIngredient;
+export default React.memo(DriedFruitsIngredient);
 
