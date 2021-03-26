@@ -1,0 +1,22 @@
+.Control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Control button{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: red;
+}
+.Control button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.Control button:focus{
+    outline: white;
+}
