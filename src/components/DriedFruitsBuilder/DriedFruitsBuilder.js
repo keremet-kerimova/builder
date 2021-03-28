@@ -16,14 +16,14 @@ const DriedFruitsBuilder = () => {
   });
 
   function addIngredient(type){
-   const newIngredient = { ...ingredients };
-   newIngredient[type]++;
+   const newIngredients = { ...ingredients };
+   newIngredients[type]++;
    setIngredients(newIngredients);
   }
 
   function removeIngredient(type){
-    const newIngredient = { ...ingredients };
-    newIngredient[type]--;
+    const newIngredients = { ...ingredients };
+    newIngredients[type]--;
     setIngredients(newIngredients);
    }
   
@@ -37,24 +37,4 @@ const DriedFruitsBuilder = () => {
 }
 
 export default DriedFruitsBuilder;
-
-
-
-
-
-
-// const DriedFruitsBuilder = () => {
-//     const ingredients = {
-//         kiwi:1,
-//         nuts:2,
-//         raisins:3,
-//     };
-//     return(
-//         <div className ={classes.DriedFruitsBuilder}>
-//          <DriedFruitsPreview ingredients={ingredients} />
-//          <DriedFruitsControl />
-
-//         </div>
-//     );
-// }
-// export default DriedFruitsBuilder;   
+ 
