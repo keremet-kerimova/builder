@@ -5,12 +5,32 @@
 
 *{
     box-sizing: border-box;
-}
+/* }
  body{
     margin: 0;
     /* font-family: 'Niconne', cursive; */
     /* font-family: 'Pacifico', cursive;; */
     /* font-family: 'Gorditas', cursive; */
-    font-family: 'Miniver', cursive;
+    /* font-family: 'Miniver', cursive; */
   
-}
+} */
+body {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h1,
+  h2 {
+    color: #e97fb9;
+    font-family: "Quicksand", sans-serif;
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+  
