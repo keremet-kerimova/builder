@@ -8,7 +8,7 @@
     font-size: 2rem;
     color: gold;
     background-color: rebeccapurple;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   @media (max-width: 549px) {

@@ -1,7 +1,7 @@
-import Logo from "../Logo/Logo"
-import Nav from  "../Nav/Nav"
+import Logo from "../../Logo/Logo"
+import Nav from  "../../Nav/Nav"
 import classes from "./Drawer.module.css"
-import Backdrop from "../Ul/Backdrop/Backdrop"
+import Backdrop from "../../Ul/Backdrop/Backdrop"
 
 
 const Drawer = ({ open, closeDrawer }) => {

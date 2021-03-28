@@ -1,6 +1,6 @@
 import classes from "./DriedFruitsBuilder.module.css";
-import DriedFruitsPreviews from "./DriedFruitsPreviews/DriedFruitsPreviews";
-import DriedFruitsControls from "./DriedFruitsControls/DriedFruitsControls";
+import DriedFruitsPreviews from "../DriedFruitsPreviews/DriedFruitsPreviews";
+import DriedFruitsControls from "../DriedFruitsControls/Controls/DriedFruitsControls";
 import { useState } from "react";
 
 

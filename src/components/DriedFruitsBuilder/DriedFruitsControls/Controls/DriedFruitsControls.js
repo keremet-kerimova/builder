@@ -1,4 +1,4 @@
-import Control from "./Control/Control";
+import Control from "../Control/Control";
 import classes from "./DriedFruitsControls.module.css";;
 
 const DriedFruitsControls = ({ ingredients, addIngredient, removeIngredient }) => {

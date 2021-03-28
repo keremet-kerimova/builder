@@ -1,5 +1,5 @@
 import Layout from "./components/Layout/Layout";
-import DriedFruitsBuilder from "./components/DriedFruitsBuilder/DriedFruitsBuilder";
+import DriedFruitsBuilder from "./components/DriedFruitsBuilder/Builder/DriedFruitsBuilder";
 import "./App.css"
 
 function App() {
