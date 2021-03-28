@@ -1,14 +1,21 @@
 import Control from "./Control/Control";
-import classes from "./DriedFruitsControls.module.css";
+import classes from "./DriedFruitsControls.module.css";;
 
-const DriedFruitsControls = ({ingredients, addIngredient, removeIngredient}) => {
-  const result = [];
+const DriedFruitsControls = ({ ingredients, addIngredient, removeIngredient }) => {
+  const results = [];
   for (const ingredient in ingredients) {
-    result.push(<Control type={ingredient} addIngredient={addIngredient} removeIngredient={removeIngredient}/>)
-    
-    }
+    results.push(<Control
+        key={ingredient}
+        add={addIngredient}
+        remove={removeIngredient}
+        type={ingredient} />)
+  }
+
   return (
-    <div className={classes.DriedFruitsControls}>{result}</div>
+    <div className={classes.DriedFruitsControls}>
+      <strong>Ingredients</strong>
+      {results}
+    </div>
   );
 }
 
