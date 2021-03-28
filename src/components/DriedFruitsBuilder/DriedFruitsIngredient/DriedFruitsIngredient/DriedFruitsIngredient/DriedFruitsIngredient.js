@@ -1,12 +1,6 @@
 import classes from "./DriedFruitsIngredient.module.css";
-import react from "react";
+import React from "react";
 
-// import salamiBackground from "../../../images/salami.svg";
-// import tomatoBackground from "../../../images/tomato.svg";
-// import blackOliveBackground from "../../../images/blackOlive.svg";
-// import greenOliveBackground from "../../../images/greenOlive.svg";
-// import redPepperBackground from "../../../images/redPepper.svg";
-// import yellowPepperBackground from "../../../images/yellowPepper.svg";
 
 const DriedFruitsIngredient = ({ type }) => {
   const types = {
@@ -52,4 +46,3 @@ const DriedFruitsIngredient = ({ type }) => {
 
 
 export default React.memo(DriedFruitsIngredient);
-
