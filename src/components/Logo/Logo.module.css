@@ -1,4 +1,4 @@
-.Logo {
+/* .Logo {
     display: flex;
     align-items: center;
     line-height: 1.5rem;
@@ -9,23 +9,13 @@
   }
   .Logo div {
     margin-top: 10px;
-  }
-  /* .Logo {
+  } */
+  .Logo {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 60px;
-    margin-left: 8px;
-    font-family: "Julius Sans One",sans-serif;
-    font-size: 20px;
   }
   .Logo img {
-    height: 50px;
-    margin-right: 15px;
-    margin-left: 8px;
+    height: 3rem;
+    margin: .5rem;
   }
-  .Logo div {
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 20px;
-  }
-  */
+  
