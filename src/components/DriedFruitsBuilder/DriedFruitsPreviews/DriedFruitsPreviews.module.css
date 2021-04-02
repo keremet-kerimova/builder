@@ -5,7 +5,7 @@
      margin-bottom: 1rem;
      border-radius: 100%;
      background-color: #67fcca;
-   
+    z-index: 1;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -14,5 +14,5 @@
      width: 380px;
      height: 380px;
      border-radius: 100%;
-     position: relative;
+
    }
