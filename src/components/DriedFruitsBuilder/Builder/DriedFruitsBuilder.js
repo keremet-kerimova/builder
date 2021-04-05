@@ -1,6 +1,7 @@
 import classes from "./DriedFruitsBuilder.module.css";
 import DriedFruitsPreviews from "../DriedFruitsPreviews/DriedFruitsPreviews";
 import DriedFruitsControls from "../DriedFruitsControls/Controls/DriedFruitsControls";
+
 import { useEffect, useState } from "react";
 import axios from "axios"
 
@@ -21,7 +22,20 @@ const DriedFruitsBuilder = () => {
     redPepper: 1,
     yellowPepper: 1,
   });
+
+
+  useEffect (() => {
+    axios.get('https://builder-6d74a-default-rtdb.firebaseio.com/ingredients.json')
+    .then ((response) => {
+        console.log(response);
+        const ingredients = response.data;
+        setIngredients(ingredients);
+      });
+  }, []);
+
+
   const [price, setPrice] = useState(150);
+
 
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
@@ -49,5 +63,7 @@ const DriedFruitsBuilder = () => {
       removeIngredient={removeIngredient}
       />
   </div>
+  )
+  }
 
 export default DriedFruitsBuilder;

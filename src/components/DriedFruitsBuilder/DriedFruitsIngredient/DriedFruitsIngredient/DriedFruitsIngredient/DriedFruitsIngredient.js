@@ -1,15 +1,16 @@
 import classes from "./DriedFruitsIngredient.module.css";
 import React from "react";
+import nullBackground from "../../../../../images/cashew.svg";
+import kiwiBackground from "../../../../../images/kiwi.svg";
+import driedBackground from "../../../../../images/foto.jpg";
+
 
 
 const DriedFruitsIngredient = ({ type }) => {
   const types = {
-    salami: { backgroundColor: "red", width: "35px", height: "35px" },
-    tomato: { backgroundColor: "yellow", width: "35px", height: "35px" },
-    blackOlive: { backgroundColor: "green", width: "10px", height: "10px" },
-    greenOlive: { backgroundColor: "black", width: "10px", height: "10px" },
-    redPepper: { backgroundColor: "blue", width: "20px", height: "20px" },
-    yellowPepper: { backgroundColor: "red", width: "40px", height: "40px" },
+    null: { backgroundImage: `url(${nullBackground})`, width: "35px", height: "35px" },
+    kiwi: { backgroundImage: `url(${kiwiBackground})`, width: "35px", height: "35px" },
+   dried: { backgroundImage: `url(${driedBackground})`, width: "10px", height: "10px" },
   };
 
   function getPosition(ingredientWidth) {
