@@ -1,7 +1,7 @@
 import classes from "./DriedFruitsBuilder.module.css";
 import DriedFruitsPreviews from "../DriedFruitsPreviews/DriedFruitsPreviews";
 import DriedFruitsControls from "../DriedFruitsControls/Controls/DriedFruitsControls";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 
@@ -26,6 +26,14 @@ const DriedFruitsBuilder = () => {
     newIngredients[type]--;
     setIngredients(newIngredients);
    }
+
+  useEffect(() => {
+    axios.get('https://builder-6d74a-default-rtdb.firebaseio.com/ingredients.json'
+      .then((response) => {
+        console.log(response);
+        const email = response.data.email;
+        setEmail(email);
+      }), [userId]);
   
 
   return (
