@@ -13,6 +13,7 @@ const DriedFruitsIngredient = ({ type }) => {
    dried: { backgroundImage: `url(${driedBackground})`, width: "10px", height: "10px" },
   };
 
+ 
   function getPosition(ingredientWidth) {
     const pizzaDiameter = 380;
     const pizzaRadius = pizzaDiameter / 2;
@@ -34,16 +35,17 @@ const DriedFruitsIngredient = ({ type }) => {
   }
 
   // Get random position for this ingredient.
-  const position = getPosition(types[type].width);
-  types[type].top = position.top + "px";
-  types[type].left = position.left + "px";
+  if (!fixed) {
+    const position = getPosition(types[type].width);
+    types[type].top = position.top + "px";
+    types[type].left = position.left + "px";
+  }
   // Get random rotation for this ingredient.
-  types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+   types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
   return (
     <div className={classes.DriedFruitsIngredient} style={types[type]}></div>
   );
 }
-
 
 export default React.memo(DriedFruitsIngredient);
