@@ -14,14 +14,14 @@ const DriedFruitsBuilder = () => {
     redPepper: 3,
     yellowPepper: 2,
   };
-  const [ingredients, setIngredients] = useState({
-    tomato: 1,
-    salami: 1,
-    greenOlive: 1,
-    blackOlive: 1,
-    redPepper: 1,
-    yellowPepper: 1,
-  });
+  // const [ingredients, setIngredients] = useState({
+  //   tomato: 1,
+  //   salami: 1,
+  //   greenOlive: 1,
+  //   blackOlive: 1,
+  //   redPepper: 1,
+  //   yellowPepper: 1,
+  // });
 
   const [ingredients, setIngredients] = useState({});
   const [price, setPrice] = useState(0);
