@@ -1,8 +1,13 @@
 import Control from "../Control/Control";
 import classes from "./DriedFruitsControls.module.css";;
+import Button from "../../../Ul/Button/Button"
 
-
-const DriedFruitsControls = ({ ingredients, addIngredient, removeIngredient }) => {
+const DriedFruitsControls = ({
+  ingredients,
+  addIngredient,
+  removeIngredient,
+  startOrdering
+}) => {
   const results = [];
   let total = 0;
   for (const ingredient in ingredients) {
@@ -13,15 +18,15 @@ const DriedFruitsControls = ({ ingredients, addIngredient, removeIngredient }) =
         key={ingredient}
         add={addIngredient}
         remove={removeIngredient}
+        count={ingredients[ingredient]}
         type={ingredient} />)
   }
-
   return (
-    <div className={classes.Controls}>
-      <strong>Ingredients</strong>
-      {results}
-      <button disabled={!total}>Order</button>
-    </div>
+    <div className={classes.DriedFruitsControls}>
+    <strong>Ingredients</strong>
+    {results}
+    <Button disabled={!total} onClick={startOrdering}>Order</Button>
+  </div>
   );
 }
 
