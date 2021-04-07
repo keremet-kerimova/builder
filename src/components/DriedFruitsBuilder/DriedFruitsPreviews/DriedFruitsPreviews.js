@@ -2,7 +2,7 @@ import DriedFruitsIngredient from "../DriedFruitsIngredient/DriedFruitsIngredien
 import classes from "./DriedFruitsPreviews.module.css";
 // import ingredientsBackground from "../../../images/cheese.svg";
 
-const DriedFruitsPreviews = ({ ingredients, price}) => {
+const DriedFruitsPreviews = ({ ingredients, price }) => {
   const result = [];
   for (const ingredient in ingredients) {
     for (let i = 0; i < ingredients[ingredient]; i++) {
@@ -19,11 +19,10 @@ const DriedFruitsPreviews = ({ ingredients, price}) => {
           {result}
         </div>
       </div>
-      <div className={classes.price}>{price} som</div>
+      <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>
   );
 }
-
 
 
 export default DriedFruitsPreviews;
