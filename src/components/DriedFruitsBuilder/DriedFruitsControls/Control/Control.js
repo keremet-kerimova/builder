@@ -1,14 +1,15 @@
-import DriedFruitsIngredient from "../../DriedFruitsIngredient/DriedFruitsIngredient/DriedFruitsIngredient/DriedFruitsIngredient";
+import Button from "../../../../components/Ul/Button/Button";
+import DriedFruitsIngredient from "../../DriedFruitsIngredient/DriedFruitsIngredient";
 import classes from "./Control.module.css";
 
-const Control = ({ type, add, remove }) => {
+const Control = ({ type, add, remove, count }) => {
   return (
     <div className={classes.Control}>
-      <button className={classes.more} onClick={() => add(type)}>+</button>
+      <Button onClick={() => add(type)}>+</Button>
       <div className={classes.ingredient}>
         <DriedFruitsIngredient type={type} fixed />
       </div>
-      <button className={classes.less} onClick={() => remove(type)}>-</button>
+      <Button onClick={() => remove(type)} disabled={!count}>-</Button>
     </div>
   );
 }
