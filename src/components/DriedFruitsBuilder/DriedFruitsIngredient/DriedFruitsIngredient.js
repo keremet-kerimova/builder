@@ -14,19 +14,19 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
   };
 
   
-  function getPosition(ingredientWidth) {
-    const pizzaDiameter = 380;
-    const pizzaRadius = pizzaDiameter / 2;
-    const ingredientRadius = parseInt(ingredientWidth) / 2;
+    function getPosition(ingredientWidth) {
+    const driedfruitsDiametr = 350;
+    const  driedfruitsRadius =  driedfruitsDiametr / 3;
+    const ingredientRadius = parseInt(ingredientWidth) / 9;
 
-    const ingredientTop = Math.round(Math.random() * pizzaDiameter);
-    const ingredientLeft = Math.round(Math.random() * pizzaDiameter);
+    const ingredientTop = Math.round(Math.random() * driedfruitsDiametr);
+    const ingredientLeft = Math.round(Math.random() * driedfruitsDiametr);
 
     const distance = Math.sqrt(
-      Math.pow(ingredientTop - pizzaRadius, 2) + Math.pow(ingredientLeft - pizzaRadius, 2)
+    Math.pow(ingredientTop - driedfruitsRadius, 2) + Math.pow(ingredientLeft - driedfruitsRadius, 1)
     ) + ingredientRadius;
 
-    return distance < pizzaRadius
+    return distance < driedfruitsRadius
       ? {
         top: ingredientTop - ingredientRadius,
         left: ingredientLeft - ingredientRadius
@@ -34,14 +34,14 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
       : getPosition(ingredientWidth);
   }
 
-  // Get random position for this ingredient.
   if (!fixed) {
     const position = getPosition(types[type].width);
     types[type].top = position.top + "px";
     types[type].left = position.left + "px";
+    // Get random rotation for this ingredient.
+    types[type].transform = `rotate(${Math.round(Math.random() )}deg)`;
   }
-  // Get random rotation for this ingredient.
-  types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+
 
   return (
     <div className={classes.DriedFruitsIngredient} style={types[type]}></div>

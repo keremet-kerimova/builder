@@ -1,6 +1,5 @@
 import DriedFruitsPreviews from "../DriedFruitsPreviews/DriedFruitsPreviews"
 import DriedFruitsControls from "../DriedFruitsControls/Controls/DriedFruitsControls";
-
 import classes from "./DriedFruitsBuilder.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -21,13 +20,9 @@ const DriedFruitsBuilder = () => {
 
   useEffect(
     () => axios
-      .get('https://builder-a51d0-default-rtdb.firebaseio.com/default.json')
+      .get('https://builder-6d74a-default-rtdb.firebaseio.com/default.json')
       .then(response => {
         setPrice(response.data.price);
-
-        // For arrays
-        // setIngredients(Object.values(response.data.ingredients));
-        // For objects
         setIngredients(response.data.ingredients);
       }), []
   );
