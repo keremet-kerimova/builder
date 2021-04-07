@@ -6,25 +6,27 @@ import driedBackground from "../../../images/foto.jpg";
 
 
 
-const DriedFruitsIngredient = ({ type }) => {
+const DriedFruitsIngredient = ({ type, fixed }) => {
   const types = {
     null: { backgroundImage: `url(${nullBackground})`, width: "35px", height: "35px" },
     kiwi: { backgroundImage: `url(${kiwiBackground})`, width: "35px", height: "35px" },
    dried: { backgroundImage: `url(${driedBackground})`, width: "10px", height: "10px" },
   };
+
+  
   function getPosition(ingredientWidth) {
-    const driedfruitsDiameter = 380;
-    const driedfruitsRadius =driedfruitsDiameter / 2;
+    const pizzaDiameter = 380;
+    const pizzaRadius = pizzaDiameter / 2;
     const ingredientRadius = parseInt(ingredientWidth) / 2;
 
-    const ingredientTop = Math.round(Math.random() * driedfruitsDiameter);
-    const ingredientLeft = Math.round(Math.random() * driedfruitsDiameter);
+    const ingredientTop = Math.round(Math.random() * pizzaDiameter);
+    const ingredientLeft = Math.round(Math.random() * pizzaDiameter);
 
     const distance = Math.sqrt(
-      Math.pow(ingredientTop - driedfruitsRadius, 2) + Math.pow(ingredientLeft - driedfruitsRadius, 2)
+      Math.pow(ingredientTop - pizzaRadius, 2) + Math.pow(ingredientLeft - pizzaRadius, 2)
     ) + ingredientRadius;
 
-    return distance < driedfruitsRadius
+    return distance < pizzaRadius
       ? {
         top: ingredientTop - ingredientRadius,
         left: ingredientLeft - ingredientRadius

@@ -1,4 +1,4 @@
-import DriedFruitsIngredients from "../DriedFruitsIngredient/DriedFruitsIngredient";
+import DriedFruitsIngredient from "../DriedFruitsIngredient/DriedFruitsIngredient";
 import classes from "./DriedFruitsPreviews.module.css";
 // import ingredientsBackground from "../../../images/cheese.svg";
 
