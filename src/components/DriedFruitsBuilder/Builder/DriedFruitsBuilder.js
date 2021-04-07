@@ -23,19 +23,18 @@ const DriedFruitsBuilder = () => {
     yellowPepper: 1,
   });
 
+  const [ingredients, setIngredients] = useState({});
+  const [price, setPrice] = useState(0);
 
-  useEffect (() => {
-    axios.get('https://builder-6d74a-default-rtdb.firebaseio.com/ingredients.json')
-    .then ((response) => {
-        console.log(response);
-        const ingredients = response.data;
-        setIngredients(ingredients);
-      });
-  }, []);
+  useEffect(
+    () => axios
+      .get('https://builder-6d74a-default-rtdb.firebaseio.com/default.json')
+      .then(response => {
+        setPrice(response.data.price);
 
-
-  const [price, setPrice] = useState(150);
-
+        setIngredients(response.data.ingredients);
+      }),[]
+  );
 
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
@@ -52,7 +51,6 @@ const DriedFruitsBuilder = () => {
       setIngredients(newIngredients);
     }
   }
-
 
   return (
     <div className={classes.DriedFruitsBuilder}>
