@@ -1,5 +1,5 @@
 import Control from "../Control/Control";
-import classes from "./DriedFruitsControls.module.css";;
+import classes from "./DriedFruitsControls.module.css";
 import Button from "../../../Ul/Button/Button"
 
 const DriedFruitsControls = ({
