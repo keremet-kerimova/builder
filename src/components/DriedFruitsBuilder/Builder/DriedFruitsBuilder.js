@@ -14,7 +14,7 @@ const DriedFruitsBuilder = () => {
 
   };
   const [ingredients, setIngredients] = useState({});
-  const [price, setPrice] = useState();
+  const [price, setPrice] = useState(0);
   const [ordering, setOrdering] = useState(false);
 
   useEffect(
