@@ -7,10 +7,8 @@ import Modal from "../../../components/Ul/Modal/Modal";
 
 const DriedFruitsBuilder = () => {
   const prices = {
-   dateFruit:3,
-   driedapricots:1,
    null:2,
-   prunes:1
+   kiwi:1,
 
   };
   const [ingredients, setIngredients] = useState({});

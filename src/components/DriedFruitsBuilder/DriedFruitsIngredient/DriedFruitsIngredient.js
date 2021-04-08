@@ -1,52 +1,59 @@
-import classes from "./DriedFruitsIngredient.module.css";
 import React from "react";
+
+import classes from "./DriedFruitsIngredient.module.css";
 import nullBackground from "../../../images/null.svg";
 import kiwiBackground from "../../../images/kiwi.svg";
-import driedBackground from "../../../images/foto.jpg";
-
 
 
 const DriedFruitsIngredient = ({ type, fixed }) => {
   const types = {
-    null: { backgroundImage: `url(${nullBackground})`},
-    kiwi: { backgroundImage: `url(${kiwiBackground})`},
-   dried: { backgroundImage: `url(${driedBackground})`},
+    null: {
+      backgroundImage: `url(${nullBackground})`,
+      width: "10px",
+      height: "10px",
+    },
+    kiwi: {
+      backgroundImage: `url(${kiwiBackground})`,
+      width: "10px",
+      height: "10px",
+    },
+   
   };
 
-  
   function getPosition(ingredientWidth) {
-    const driedfruitsDiametr = 350;
-    const driedfruitsRadius = driedfruitsDiametr / 3;
-    const ingredientRadius = parseInt(ingredientWidth) / 9;
+    const pizzaDiameter = 380;
+    const pizzaRadius = pizzaDiameter / 2;
+    const ingredientRadius = parseInt(ingredientWidth) / 2;
 
-    const ingredientTop = Math.round(Math.random() * driedfruitsDiametr);
-    const ingredientLeft = Math.round(Math.random() * driedfruitsDiametr);
+    const ingredientTop = Math.round(Math.random() * pizzaDiameter);
+    const ingredientLeft = Math.round(Math.random() * pizzaDiameter);
 
-    const distance = Math.sqrt(
-      Math.pow(ingredientTop - driedfruitsRadius, 2) + Math.pow(ingredientLeft - driedfruitsRadius, 1)
-    ) + ingredientRadius;
+    const distance =
+      Math.sqrt(
+        Math.pow(ingredientTop - pizzaRadius, 2) +
+          Math.pow(ingredientLeft - pizzaRadius, 2)
+      ) + ingredientRadius;
 
-    return distance < driedfruitsRadius
+    return distance < pizzaRadius
       ? {
-        top: ingredientTop - ingredientRadius,
-        left: ingredientLeft - ingredientRadius
-      }
+          top: ingredientTop - ingredientRadius,
+          left: ingredientLeft - ingredientRadius,
+        }
       : getPosition(ingredientWidth);
   }
 
+  // Get random position for this ingredient.
   if (!fixed) {
     const position = getPosition(types[type].width);
     types[type].top = position.top + "px";
     types[type].left = position.left + "px";
-    // Get random rotation for this ingredient.
-    types[type].transform = `rotate(${Math.round(Math.random() )}deg)`;
   }
-
+  // Get random rotation for this ingredient.
+  types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
   return (
     <div className={classes.DriedFruitsIngredient} style={types[type]}></div>
   );
-}
+};
 
 export default React.memo(DriedFruitsIngredient);
- 
