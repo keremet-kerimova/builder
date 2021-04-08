@@ -7,15 +7,14 @@ import Modal from "../../../components/Ul/Modal/Modal";
 
 const DriedFruitsBuilder = () => {
   const prices = {
-    tomato: 3.5,
-    salami: 4,
-    greenOlive: .3,
-    blackOlive: .3,
-    redPepper: 2,
-    yellowPepper: 1,
+   dateFruit:3,
+   driedapricots:1,
+   null:2,
+   prunes:1
+
   };
   const [ingredients, setIngredients] = useState({});
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState();
   const [ordering, setOrdering] = useState(false);
 
   useEffect(
