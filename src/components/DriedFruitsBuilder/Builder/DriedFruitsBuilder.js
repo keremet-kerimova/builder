@@ -4,6 +4,8 @@ import classes from "./DriedFruitsBuilder.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Modal from "../../../components/Ul/Modal/Modal";
+import OrderSummary from "../OrderSummary/OrderSummary";
+import Button from "../../Ul/Button/Button";
 
 const DriedFruitsBuilder = () => {
   const prices = {
@@ -15,14 +17,20 @@ const DriedFruitsBuilder = () => {
   const [price, setPrice] = useState(0);
   const [ordering, setOrdering] = useState(false);
 
-  useEffect(
-    () => axios
+  useEffect(loadDefaults, []);
+
+  function loadDefaults() {
+    axios
       .get('https://builder-6d74a-default-rtdb.firebaseio.com/default.json')
       .then(response => {
         setPrice(response.data.price);
+
+        // For arrays
+        // setIngredients(Object.values(response.data.ingredients));
+        // For objects
         setIngredients(response.data.ingredients);
-      }), []
-  );
+      });
+  }
 
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
@@ -40,12 +48,28 @@ const DriedFruitsBuilder = () => {
     }
   }
 
+ 
   function startOrdering() {
     setOrdering(true);
   }
 
   function stopOrdering() {
     setOrdering(false);
+  }
+
+  function finishOrdering() {
+    axios
+    .post('https://builder-6d74a-default-rtdb.firebaseio.com/orders.json',{
+      ingredients: ingredients,
+      price: price,
+      address: "Shopokova kv 4",
+      phone:"0707379480",
+      name:"Keremet Kerimova",
+    })
+    .then(() =>{
+      setOrdering(false);
+      loadDefaults();
+    })
   }
 
   return (
@@ -61,7 +85,15 @@ const DriedFruitsBuilder = () => {
         />
       <Modal
         show={ordering}
-        cancel={stopOrdering}>Hello</Modal>
+        cancel={stopOrdering}>Hello
+        <OrderSummary
+          ingredients={ingredients}
+          price={price}
+            />
+          <Button onClick={finishOrdering} green>Checkout</Button>
+          <Button onClick={stopOrdering}>Cancel</Button>
+        </Modal>
+        
     </div>
   );
 }
