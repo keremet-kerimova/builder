@@ -1,19 +1,25 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Gorditas&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap'); */
 
 *{
     box-sizing: border-box;
-    font-family: 'Architects Daughter', cursive;
+    font-family: "Quicksand", sans-serif;
  }
  body{
     margin: 0;
     padding: 0;
     margin-bottom: 60px;
-    font-family: 'Architects Daughter', cursive;
+    font-family: "Quicksand", sans-serif;
  }
- 
+ h1{
+ color: #e97fb9;
+  font-family: "Quicksand", sans-serif;
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 0;
+ }
 
 
 
