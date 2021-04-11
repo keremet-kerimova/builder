@@ -11,6 +11,7 @@ const DriedFruitsBuilder = () => {
   const prices = {
    null:2,
    kiwi:1,
+   prunes:4,
 
   };
   const [ingredients, setIngredients] = useState({});

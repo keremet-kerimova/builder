@@ -1,10 +1,10 @@
 .Drawer .content {
   width: 250px;
   height: 100%;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
-  z-index: 1;
+  /* z-index: 1; */
 
   font-size: 2rem;
   color: white;

@@ -3,6 +3,7 @@ import React from "react";
 import classes from "./DriedFruitsIngredient.module.css";
 import nullBackground from "../../../images/null.svg";
 import kiwiBackground from "../../../images/kiwi.svg";
+import prunesBackground from "../../../images/prunes.svg"
 
 
 const DriedFruitsIngredient = ({ type, fixed }) => {
@@ -17,24 +18,29 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
       width: "10px",
       height: "10px",
     },
+    prunes: {
+      backgroundImage: `url(${prunesBackground})`,
+      width: "10px",
+      height: "10px",
+    }
    
   };
 
   function getPosition(ingredientWidth) {
-    const pizzaDiameter = 380;
-    const pizzaRadius = pizzaDiameter / 2;
+    const fruitsDiameter = 380;
+    const fruitsRadius = fruitsDiameter / 2;
     const ingredientRadius = parseInt(ingredientWidth) / 2;
 
-    const ingredientTop = Math.round(Math.random() * pizzaDiameter);
-    const ingredientLeft = Math.round(Math.random() * pizzaDiameter);
+    const ingredientTop = Math.round(Math.random() * fruitsDiameter);
+    const ingredientLeft = Math.round(Math.random() * fruitsDiameter);
 
     const distance =
       Math.sqrt(
-        Math.pow(ingredientTop - pizzaRadius, 2) +
-          Math.pow(ingredientLeft - pizzaRadius, 2)
+        Math.pow(ingredientTop - fruitsRadius, 2) +
+          Math.pow(ingredientLeft - fruitsRadius, 2)
       ) + ingredientRadius;
 
-    return distance < pizzaRadius
+    return distance < fruitsRadius
       ? {
           top: ingredientTop - ingredientRadius,
           left: ingredientLeft - ingredientRadius,
@@ -49,7 +55,7 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     types[type].left = position.left + "px";
   }
   // Get random rotation for this ingredient.
-  types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+  types[type].transform = `rotate(${Math.round(Math.random())}deg)`;
 
   return (
     <div className={classes.DriedFruitsIngredient} style={types[type]}></div>
