@@ -12,7 +12,7 @@ const DriedFruitsPreviews = ({ ingredients, price }) => {
 
   return (
     <div className={classes.DriedFruitsPreviews}>
-      <div className={classes.pizza}>
+      <div className={classes.fruits}>
         <div
           className={classes.ingredients}
           >
