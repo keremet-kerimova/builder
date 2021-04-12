@@ -10,18 +10,18 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
   const types = {
     null: {
       backgroundImage: `url(${nullBackground})`,
-      width: "10px",
-      height: "10px",
+      width: "20px",
+      height: "20px",
     },
     kiwi: {
       backgroundImage: `url(${kiwiBackground})`,
-      width: "10px",
-      height: "10px",
+      width: "20px",
+      height: "20px",
     },
     prunes: {
       backgroundImage: `url(${prunesBackground})`,
-      width: "10px",
-      height: "10px",
+      width: "20px",
+      height: "20px",
     }
    
   };

@@ -1,22 +1,29 @@
 .NavItem a {
-  color: white;
+  border: none;
   border-bottom: 5px solid transparent;
   text-decoration: none;
   display: block;
-  padding: .5rem 1rem .35rem;
+  padding: 11px;
+  color: black; 
+  line-height: 1.1;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  transition: all .2s ease-in-out;
 }
+
 .NavItem a:hover {
-  border-color: white;
-  background-color: rgb(236, 47, 14);
+  border-color: plum;
+  background-color: hsla(0,0%,100%,.3);
 }
 .NavItem a:active,
 .NavItem a.active {
-  border-color: white;
+  border-color: plum;
 }
 
-@media (max-width: 549px) {
+@media (max-width: 550px) {
   .NavItem a {
-    border-right: 10px solid transparent;
-    border-bottom: none;
-  }
+    border: none;
+    border-left: 8px solid transparent;
+    background-color: rgba(61,60,60,.1);
+}
 }

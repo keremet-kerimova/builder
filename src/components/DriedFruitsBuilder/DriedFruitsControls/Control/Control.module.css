@@ -1,9 +1,27 @@
-.Control {
+.Control{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 5px;
   margin: .5rem 0;
 }
+.Control div{
+  background-size: cover;
+  border-radius: 100%;
+  box-shadow: 0 0 10px #eee ;
+  margin: 10px;
+  margin-top: 15px;
+}
+.Control .ingredient div:hover{
+  transform: none;
+}
+.Control .ingredient div:hover{
+  background-color: rgb(66, 190, 9);
+} 
+
+
 .Control .ingredient div {
   position: static;
   margin: 0 .5rem;

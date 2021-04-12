@@ -1,4 +1,4 @@
-.Button {
+/* .Button {
   border: 0;
   margin: 0 .5rem;
   padding: 0 1rem;
@@ -24,4 +24,58 @@
 }
 .green:not(:disabled):hover {
   background-color: rgb(49, 172, 0);
+} */
+.Button {
+  border: 1px solid #e97fb9;
+  background-color: #e97fb9;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin-top: 6px;
+  color: black;
+  font-family: "Julius Sans One", sans-serif;
+  cursor: pointer;
+}
+.Button:disabled {
+  opacity: 0.5;
+}
+.Button:not(:disabled):hover {
+  opacity: 0.8;
+}
+.Button:disabled {
+  opacity: 0.5;
+}
+.Button:not(:disabled):hover {
+  opacity: 0.8;
+}
+.green {
+  font-family: "Julius Sans One", sans-serif;
+  background-color: rgb(25, 124, 25);
+  color: white;
+  border: none;
+
+  width: 120px;
+  height: 40px;
+  font-size: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.red {
+  font-family: "Julius Sans One", sans-serif;
+  background-color: rgb(219, 70, 70);
+  color: white;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 50px;
 }

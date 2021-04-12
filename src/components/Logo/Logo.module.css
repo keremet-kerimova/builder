@@ -1,10 +1,19 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
   .Logo {
     display: flex;
     align-items: center;
+    margin-left: 8px;
+    height: 60px;
   }
   .Logo img {
-    height: 3rem;
-    margin: .5rem;
+    height: 50px;
+    margin-right: 15px;
+    margin-left: 8px;
+
+
   }
-  
+  div{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 26px;
+    font-weight: unset;
+  }
