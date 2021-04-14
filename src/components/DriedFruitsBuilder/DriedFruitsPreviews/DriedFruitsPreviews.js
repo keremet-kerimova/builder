@@ -1,6 +1,6 @@
 import DriedFruitsIngredient from "../DriedFruitsIngredient/DriedFruitsIngredient";
 import classes from "./DriedFruitsPreviews.module.css";
-import ingredientsBackground from "../../../images/";
+import ingredientsBackground from "../../../images/plate.svg";
 
 const DriedFruitsPreviews = ({ ingredients, price }) => {
   const result = [];

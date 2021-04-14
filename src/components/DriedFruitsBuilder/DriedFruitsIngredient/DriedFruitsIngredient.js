@@ -55,7 +55,7 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     types[type].left = position.left + "px";
   }
   // Get random rotation for this ingredient.
-  types[type].transform = `rotate(${Math.round(Math.random())}deg)`;
+  types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
   return (
     <div className={classes.DriedFruitsIngredient} style={types[type]}></div>
