@@ -10,7 +10,6 @@
 .Control div{
   background-size: cover;
   border-radius: 100%;
-  box-shadow: 0 0 10px #eee ;
   margin: 10px;
   margin-top: 15px;
 }
@@ -18,7 +17,7 @@
   transform: none;
 }
 .Control .ingredient div:hover{
-  background-color: rgb(66, 190, 9);
+  background-color:white;
 } 
 
 

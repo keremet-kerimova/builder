@@ -2,7 +2,10 @@
   flex: 0 0 250px;
   border-radius: 1rem;
   padding: 1rem;
-  background-color: rgb(700, 496, 40);
-  color: white;
+  background-color: bisque;
+  color: hotpink;
   text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: initial;
+  
 }
