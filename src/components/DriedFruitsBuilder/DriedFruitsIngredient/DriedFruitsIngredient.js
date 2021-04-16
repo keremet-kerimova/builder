@@ -13,8 +13,8 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
   const types = {
     cashew : {
       backgroundImage: `url(${cashewBackground})`,
-      width: "25px",
-      height: "20px",
+      width: "35px",
+      height: "19px",
     },
     dates : {
       backgroundImage: `url(${datesBackground})`,
