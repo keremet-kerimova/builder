@@ -4,7 +4,7 @@ import classes from "./DriedFruitsIngredient.module.css";
 import nullBackground from "../../../images/null.svg";
 import kiwiBackground from "../../../images/kiwi.svg";
 import prunesBackground from "../../../images/prunes.svg";
-import cashewBackground from "../../../images/cashew2.svg";
+import cashewBackground from "../../../images/foto8.svg";
 import datesBackground from "../../../images/dates.svg";
 
 
@@ -24,7 +24,7 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     kiwi: {
       backgroundImage: `url(${kiwiBackground})`,
       width: "25px",
-      height: "20px",
+      height: "25px",
     },
     null: {
       backgroundImage: `url(${nullBackground})`,
