@@ -11,40 +11,35 @@
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 100%;
-  background-color: antiquewhite;
   background-size: 100%;
-  background-color: #f7dfbd;
-    margin: 0 auto 20px;
-    min-height: 430px;
-    min-width: 350px;
-    padding-top: 50px;
+  
+    padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 30px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-   
-
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-image: url(../../../images/foto2.svg); 
 }
 .ingredients {
-  width: 380px;
-  height: 380px;
+  width: 580px;
+  height: 480px;
   border-radius: 100%;
   position: relative;
 }
+
 .price {
-  background-color: tomato;
+  font-size: 2rem;
+  font-family: "Quicksand",sans-serif;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+ 
   border-radius: 1rem;
   padding: 0 1rem;
-  font-size: 1.5rem;
-  color: white;
-  font-weight: bold;
+  color: black;
+
 }
 /* }
 @media (max-width: 609px) {

@@ -1,4 +1,4 @@
-/* .Button {
+.Button {
   border: 0;
   margin: 0 .5rem;
   padding: 0 1rem;
@@ -24,8 +24,10 @@
 }
 .green:not(:disabled):hover {
   background-color: rgb(49, 172, 0);
-} */
-.Button {
+}
+
+
+/* .Button {
   border: 1px solid #e97fb9;
   background-color: #e97fb9;
   border-radius: 20px;
@@ -78,4 +80,4 @@
   margin-top: 20px;
   padding: 10px;
   margin-left: 50px;
-}
+} */

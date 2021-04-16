@@ -1,6 +1,6 @@
 import DriedFruitsIngredient from "../DriedFruitsIngredient/DriedFruitsIngredient";
 import classes from "./DriedFruitsPreviews.module.css";
-import ingredientsBackground from "../../../images/plate.svg";
+
 
 const DriedFruitsPreviews = ({ ingredients, price }) => {
   const result = [];
@@ -15,7 +15,8 @@ const DriedFruitsPreviews = ({ ingredients, price }) => {
        <div className={classes.fruits}> 
         <div
           className={classes.ingredients}
-        style={{ backgroundImage: `url(${ingredientsBackground})`}}>
+         
+       >
           {result}
         </div> 
       </div>

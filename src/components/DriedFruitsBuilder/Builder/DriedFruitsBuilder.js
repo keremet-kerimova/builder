@@ -11,7 +11,9 @@ const DriedFruitsBuilder = () => {
   const prices = {
    null:2,
    kiwi:1,
-   prunes:4,
+   prunes:1,
+   cashew:1,
+   dates:1,
 
   };
   const [ingredients, setIngredients] = useState({});
@@ -86,7 +88,7 @@ const DriedFruitsBuilder = () => {
         />
       <Modal
         show={ordering}
-        cancel={stopOrdering}>Hello
+        cancel={stopOrdering}>
         <OrderSummary
           ingredients={ingredients}
           price={price}

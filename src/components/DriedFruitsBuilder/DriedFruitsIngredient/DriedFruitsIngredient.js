@@ -3,27 +3,41 @@ import React from "react";
 import classes from "./DriedFruitsIngredient.module.css";
 import nullBackground from "../../../images/null.svg";
 import kiwiBackground from "../../../images/kiwi.svg";
-import prunesBackground from "../../../images/prunes.svg"
+import prunesBackground from "../../../images/prunes.svg";
+import cashewBackground from "../../../images/cashew2.svg";
+import datesBackground from "../../../images/dates.svg";
+
 
 
 const DriedFruitsIngredient = ({ type, fixed }) => {
   const types = {
-    null: {
-      backgroundImage: `url(${nullBackground})`,
-      width: "20px",
+    cashew : {
+      backgroundImage: `url(${cashewBackground})`,
+      width: "25px",
+      height: "20px",
+    },
+    dates : {
+      backgroundImage: `url(${datesBackground})`,
+      width: "45px",
       height: "20px",
     },
     kiwi: {
       backgroundImage: `url(${kiwiBackground})`,
-      width: "20px",
+      width: "25px",
+      height: "20px",
+    },
+    null: {
+      backgroundImage: `url(${nullBackground})`,
+      width: "40px",
       height: "20px",
     },
     prunes: {
       backgroundImage: `url(${prunesBackground})`,
-      width: "20px",
+      width: "25px",
       height: "20px",
-    }
-   
+    },
+    
+    
   };
 
   function getPosition(ingredientWidth) {
