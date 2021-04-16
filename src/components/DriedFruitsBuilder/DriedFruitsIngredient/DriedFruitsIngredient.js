@@ -18,7 +18,7 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     },
     dates : {
       backgroundImage: `url(${datesBackground})`,
-      width: "35px",
+      width: "55px",
       height: "20px",
     },
     kiwi: {
