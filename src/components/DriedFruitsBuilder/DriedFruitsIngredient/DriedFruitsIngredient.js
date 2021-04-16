@@ -18,7 +18,7 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     },
     dates : {
       backgroundImage: `url(${datesBackground})`,
-      width: "45px",
+      width: "35px",
       height: "20px",
     },
     kiwi: {
@@ -28,12 +28,12 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     },
     null: {
       backgroundImage: `url(${nullBackground})`,
-      width: "40px",
-      height: "20px",
+      width: "45px",
+      height: "25px",
     },
     prunes: {
       backgroundImage: `url(${prunesBackground})`,
-      width: "25px",
+      width: "44px",
       height: "20px",
     },
     
