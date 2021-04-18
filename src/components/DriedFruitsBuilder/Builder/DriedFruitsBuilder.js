@@ -7,7 +7,7 @@ import Modal from "../../../components/Ul/Modal/Modal";
 import OrderSummary from "../OrderSummary/OrderSummary";
 import Button from "../../Ul/Button/Button";
 
-const DriedFruitsBuilder = () => {
+const DriedFruitsBuilder = ({ history }) => {
   const prices = {
    null:2,
    kiwi:1,
@@ -72,6 +72,7 @@ const DriedFruitsBuilder = () => {
     .then(() =>{
       setOrdering(false);
       loadDefaults();
+      history.puch('/checout')
     })
   }
 

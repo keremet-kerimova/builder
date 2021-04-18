@@ -1,20 +1,19 @@
 import Layout from "./components/Layout/Layout";
 import DriedFruitsBuilder from "./components/DriedFruitsBuilder/Builder/DriedFruitsBuilder";
-import "./App.css"
-import Checkout from "./components/Checkout/Checout";
+import Checkout from "./components/Checkout/Checkout";
+
+import "./App.css";
 import { Redirect, Route, Switch } from "react-router";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Layout>
         <Switch>
-        <Route path="/" component={DriedFruitsBuilder} exact />
-        <Route path="/checkout" component={Checkout}  />
-        <Redirect to="/" />
+          <Route path="/" component={DriedFruitsBuilder} exact />
+          <Route path="/checkout" component={Checkout} />
+          <Redirect to="/" />
         </Switch>
-        
-        
       </Layout>
     </div>
   );
