@@ -14,9 +14,6 @@ const DriedFruitsBuilder = ({ history }) => {
    kiwi:1,
    null:2,
    prunes:1,
-     
-   
-
   };
   const [ingredients, setIngredients] = useState({});
   const [price, setPrice] = useState(0);

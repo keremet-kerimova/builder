@@ -23,5 +23,5 @@ const CheckoutSummary = ({ cancelCallback }) => {
     </div>
   );
 }
- 
+
 export default CheckoutSummary;

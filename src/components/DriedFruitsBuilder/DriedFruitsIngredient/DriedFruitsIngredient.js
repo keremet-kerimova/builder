@@ -15,26 +15,31 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
       backgroundImage: `url(${cashewBackground})`,
       width: "35px",
       height: "19px",
+      backgroundSize:"cover",
     },
     dates : {
       backgroundImage: `url(${datesBackground})`,
-      width: "55px",
-      height: "20px",
+      width: "25px",
+      height: "25px",
+      backgroundSize:"cover",
     },
     kiwi: {
       backgroundImage: `url(${kiwiBackground})`,
-      width: "25px",
-      height: "25px",
+      width: "30px",
+      height: "30px",
+      backgroundSize:"cover",
     },
     null: {
       backgroundImage: `url(${nullBackground})`,
-      width: "55px",
-      height: "55px",
+      width: "35px",
+      height: "35px",
+      backgroundSize:"cover",
     },
     prunes: {
       backgroundImage: `url(${prunesBackground})`,
       width: "44px",
       height: "20px",
+      backgroundSize:"cover",
     },
     
     
