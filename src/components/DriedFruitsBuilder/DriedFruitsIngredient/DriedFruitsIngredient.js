@@ -1,8 +1,8 @@
 import React from "react";
 
 import classes from "./DriedFruitsIngredient.module.css";
-import nullBackground from "../../../images/null.svg";
-import kiwiBackground from "../../../images/kiwi.svg";
+import nullBackground from "../../../images/kiwi.svg";
+import kiwiBackground from "../../../images/almond3.svg";
 import prunesBackground from "../../../images/prunes.svg";
 import cashewBackground from "../../../images/foto8.svg";
 import datesBackground from "../../../images/dates.svg";
@@ -28,8 +28,8 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     },
     null: {
       backgroundImage: `url(${nullBackground})`,
-      width: "45px",
-      height: "25px",
+      width: "55px",
+      height: "55px",
     },
     prunes: {
       backgroundImage: `url(${prunesBackground})`,

@@ -7,9 +7,13 @@ const CheckoutSummary = ({ cancelCallback }) => {
     <div className={classes.CheckoutSummary}>
       <div>
         <DriedFruitsPreviews ingredients={{
-          tomato: 5, 
-          salami: 10,
-          greenOlive: 50,
+           cashew:1,
+           dates:1,
+           kiwi:1,
+           null:2,
+           prunes:1,
+
+        
         }} price={150} />
       </div>
       <div>

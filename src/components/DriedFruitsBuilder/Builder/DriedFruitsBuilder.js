@@ -9,11 +9,13 @@ import Button from "../../Ul/Button/Button";
 
 const DriedFruitsBuilder = ({ history }) => {
   const prices = {
-   null:2,
-   kiwi:1,
-   prunes:1,
    cashew:1,
    dates:1,
+   kiwi:1,
+   null:2,
+   prunes:1,
+     
+   
 
   };
   const [ingredients, setIngredients] = useState({});
@@ -27,10 +29,6 @@ const DriedFruitsBuilder = ({ history }) => {
       .get('https://builder-6d74a-default-rtdb.firebaseio.com/default.json')
       .then(response => {
         setPrice(response.data.price);
-
-        // For arrays
-        // setIngredients(Object.values(response.data.ingredients));
-        // For objects
         setIngredients(response.data.ingredients);
       });
   }
@@ -72,7 +70,7 @@ const DriedFruitsBuilder = ({ history }) => {
     .then(() =>{
       setOrdering(false);
       loadDefaults();
-      history.puch('/checout')
+      history.push('/checkout')
     })
   }
 
