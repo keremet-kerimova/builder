@@ -7,7 +7,7 @@ const Checkout = ({ history }) => {
 
   return (
     <div>
-      <CheckoutSummary cancelCallback={cancelCallback} />
+      <CheckoutSummary  />
     </div>
   );
 }

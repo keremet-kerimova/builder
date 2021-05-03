@@ -1,6 +1,6 @@
 import classes from "./CheckoutSummary.module.css";
 import DriedFruitsPreviews from "../../DriedFruitsBuilder/DriedFruitsPreviews/DriedFruitsPreviews";
-import Button from "../../Ul/Button/Button";
+
 
 const CheckoutSummary = ({ cancelCallback }) => {
   return (
