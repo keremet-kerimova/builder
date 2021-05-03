@@ -1,4 +1,4 @@
-import Button from "../../UI/Button/Button"
+import Button from "../../Ul/Button/Button"
 
 const CheckoutForm = () => {
   return (

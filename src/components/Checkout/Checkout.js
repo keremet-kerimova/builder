@@ -14,8 +14,6 @@ const Checkout = ({ history }) => {
            kiwi:1,
            null:2,
            prunes:1,
-
-        
         }} price={150} />
       <CheckoutForm  />
     </div>
