@@ -1,22 +1,23 @@
-import Button from "../../Ul/Button/Button"
+import Button from "../../Ul/Button/Button";
+import classes from "./CheckoutForm.module.css";
 
-const CheckoutForm = () => {
+const CheckoutForm = ({ cancelCallback, sumbit}) => {
   return (
-    <form>
+    <form className={classes.CheckoutForm}>
       <div>
         <label htmlFor="name">Name</label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" required />
       </div>
       <div>
         <label htmlFor="address">Address</label>
-        <input type="text" name="address" id="address" />
+        <input type="text" name="address" id="address" required />
       </div>
       <div>
         <label htmlFor="phone">Phone</label>
-        <input type="text" name="phone" id="phone" />
+        <input type="text" name="phone" id="phone" required pattern="0[0-9]{9}" />
       </div>
-      <Button>Checkout</Button>
-      <Button>Cancel</Button>
+      <Button >Checkout</Button>
+      <Button onClick={cancelCallback}>Cancel</Button>
     </form>
   );
 }

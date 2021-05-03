@@ -1,5 +1,6 @@
 import CheckoutForm from "../../components/Checkout/CheckoutForm/ChecoutForm"
 import DriedFruitsPreviews from "../../components/DriedFruitsBuilder/DriedFruitsPreviews/DriedFruitsPreviews"
+import classes from "./Checkout.module.css"
 
 const Checkout = ({ history }) => {
   function cancelCallback() {
@@ -15,7 +16,9 @@ const Checkout = ({ history }) => {
            null:2,
            prunes:1,
         }} price={150} />
-      <CheckoutForm  />
+      <CheckoutForm 
+         cancelCallback={cancelCallback}
+          />
     </div>
   );
 }
