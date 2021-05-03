@@ -4,14 +4,14 @@ import DriedFruitsIngredient from "../../DriedFruitsIngredient/DriedFruitsIngred
 import classes from "./Control.module.css";
 
 const Control = ({ type,count }) => {
-  const dispatch = useDispatch
+  const dispatch = useDispatch()
   return (
     <div className={classes.Control}>
-      <Button onClick={() => add(type)}>+</Button>
+      <Button onClick={() =>dispatch({type:"ADD_INGREDIENT", ingredient:type})}>+</Button>
       <div className={classes.ingredient}>
         <DriedFruitsIngredient type={type} fixed />
       </div>
-      <Button onClick={() => remove(type)} disabled={!count}>-</Button>
+      <Button onClick={() => dispatch({type: "REMOVE_INGREDIENT", ingredient:type })} disabled={!count}>-</Button>
     </div>
   );
 }
