@@ -4,8 +4,6 @@ import Button from "../../../Ul/Button/Button"
 
 const DriedFruitsControls = ({
   ingredients,
-  addIngredient,
-  removeIngredient,
   startOrdering
 }) => {
   const results = [];
@@ -16,8 +14,6 @@ const DriedFruitsControls = ({
     // Render pizza control for this ingredient
     results.push(<Control
         key={ingredient}
-        add={addIngredient}
-        remove={removeIngredient}
         count={ingredients[ingredient]}
         type={ingredient} />)
   }

@@ -1,8 +1,10 @@
+import { useDispatch } from "react-redux";
 import Button from "../../../../components/Ul/Button/Button";
 import DriedFruitsIngredient from "../../DriedFruitsIngredient/DriedFruitsIngredient";
 import classes from "./Control.module.css";
 
-const Control = ({ type, add, remove, count }) => {
+const Control = ({ type,count }) => {
+  const dispatch = useDispatch
   return (
     <div className={classes.Control}>
       <Button onClick={() => add(type)}>+</Button>
