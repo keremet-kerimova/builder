@@ -16,13 +16,18 @@ const DriedFruitsBuilder = ({ history }) => {
 
 
 
+  
   // useEffect(loadDefaults, []);
 
   // function loadDefaults() {
   //   axios
-  //     .get('https://builder-6d74a-default-rtdb.firebaseio.com/default.json')
+  //     .get('https://builder-a51d0-default-rtdb.firebaseio.com/default.json')
   //     .then(response => {
   //       setPrice(response.data.price);
+
+  //       // For arrays
+  //       // setIngredients(Object.values(response.data.ingredients));
+  //       // For objects
   //       setIngredients(response.data.ingredients);
   //     });
   // }
@@ -36,27 +41,21 @@ const DriedFruitsBuilder = ({ history }) => {
     setOrdering(false);
   }
    function finishOrdering() {
-     setOrdering(false)
-     //loadDefaults()
-     history.push('./checkout')
+    axios
+      .post('https://builder-6d74a-default-rtdb.firebaseio.com/default.json',{
+        ingredients: ingredients,
+        price: price,
+        address: "Shopokova kv 4",
+        phone:"0707379480",
+        name:"Keremet Kerimova",
+      })
+      .then(() =>{
+        setOrdering(false);
+        // loadDefaults();
+        history.push('/checkout')
+      })
+    
    }
-
-
-  // function finishOrdering() {
-  //   axios
-  //   .post('https://builder-6d74a-default-rtdb.firebaseio.com/default.json',{
-  //     ingredients: ingredients,
-  //     price: price,
-  //     address: "Shopokova kv 4",
-  //     phone:"0707379480",
-  //     name:"Keremet Kerimova",
-  //   })
-  //   .then(() =>{
-  //     setOrdering(false);
-  //     // loadDefaults();
-  //     history.push('/checkout')
-  //   })
-  // }
 
   return (
     <div className={classes.DriedFruitsBuilder}>

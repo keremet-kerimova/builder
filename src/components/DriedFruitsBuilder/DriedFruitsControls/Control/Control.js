@@ -5,6 +5,7 @@ import classes from "./Control.module.css";
 
 const Control = ({ type,count }) => {
   const dispatch = useDispatch()
+  
   return (
     <div className={classes.Control}>
       <Button onClick={() =>dispatch({type:"ADD_INGREDIENT", ingredient:type})}>+</Button>
