@@ -2,10 +2,15 @@
   flex: 0 0 250px;
   border-radius: 2rem;
   padding: 1rem;
-  background-color: bisque;
-  color: hotpink;
+  background-color: #f6d2d9;
+  color: black;
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
   font-weight: initial;
   
+}
+strong{
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 28px;
+  font-weight: unset;
 }
