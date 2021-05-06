@@ -1,10 +1,10 @@
 const initialState = {
   ingredients:{
-  cashew:1,
-  dates:1,
-  kiwi:1,
-  null:2,
-  prunes:1,
+  cashew:10,
+  dates:10,
+  kiwi:10,
+  null:20,
+  prunes:10,
   },
  price:100,
 };

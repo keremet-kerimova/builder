@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from "react-redux"
-import App from './App';
-// import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import builderReducer from './store/builderReducer';
-import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
+import { createStore } from 'redux';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import builderReducer from './store/builderReducer';
 
 const store = createStore(builderReducer);
 

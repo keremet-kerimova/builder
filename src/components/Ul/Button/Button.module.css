@@ -1,4 +1,4 @@
-/* .Button {
+.Button {
   border: 0;
   
   padding: 0 1rem;
@@ -12,22 +12,18 @@
   font-family: 'Julius Sans One', sans-serif;
     font-size: 22px;
     font-weight: unset;
-} */
-/* .Button:not(:disabled):hover {
+} 
+ .Button:not(:disabled):hover {
   background-color:#e97fb9;
-  transform: scaleY(0);
-  transform-origin: 50% 100%;
-  transition-property: transform;
-  transition-duration: .3s;
-  border-radius: 6px;
+  
 
-} */
+} 
 .Button:focus {
   outline: none;
 }
-/* .Button:disabled {
+.Button:disabled {
   opacity: .5;
-} */
+}
 
 .green {
   background-color: rgb(137, 255, 133);
@@ -44,7 +40,7 @@
   border-radius: 6px;
  } */
 
- .Button{
+ /* .Button{
   width: 25px;
   height: 25px;
   border: 1px solid #fff;
@@ -63,12 +59,11 @@
     /* content: "";
     position: absolute; */
     
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3;
     transform: scaleY(2);
     transform: scaleX(2);
     /* transform-origin: 50% 100%; */
-    transition-property: transform;
+    /* transition-property: transform;
     transition-duration: .3s;
     border-radius: 6px;
-}
- 
+} */
