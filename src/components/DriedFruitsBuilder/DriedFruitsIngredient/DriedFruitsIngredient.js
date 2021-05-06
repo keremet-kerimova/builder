@@ -1,53 +1,52 @@
 import React from "react";
 
 import classes from "./DriedFruitsIngredient.module.css";
-import nullBackground from "../../../images/kuraga.png";
-import kiwiBackground from "../../../images/apricot.png";
-import prunesBackground from "../../../images/raisins.png";
-import cashewBackground from "../../../images/apple.png";
-import datesBackground from "../../../images/dates1.png";
+import datesBackground from "../../../images/dates.png";
+import kiwiBackground from "../../../images/kiwi.png";
+import kuragaBackground from "../../../images/kuraga.png";
 import raisinsBackground from "../../../images/raisins.png";
+import appleBackground from "../../../images/apple.png";
 
-
+// import apricotBackground from "../../../images/apricot.png"
 
 const DriedFruitsIngredient = ({ type, fixed }) => {
   const types = {
-    cashew : {
-      backgroundImage: `url(${cashewBackground})`,
-      width: "35px",
-      height: "35px",
-      backgroundSize:"cover",
-    },
     dates : {
       backgroundImage: `url(${datesBackground})`,
-      width: "55px",
-      height: "55px",
+      width: "35px",
+      height: "65px",
       backgroundSize:"cover",
     },
     kiwi: {
       backgroundImage: `url(${kiwiBackground})`,
-      width: "55px",
-      height: "55px",
-      backgroundSize:"cover",
-    },
-    null: {
-      backgroundImage: `url(${nullBackground})`,
-      width: "60px",
-      height: "60px",
-      backgroundSize:"cover",
-    },
-    prunes: {
-      backgroundImage: `url(${prunesBackground})`,
       width: "65px",
       height: "65px",
       backgroundSize:"cover",
     },
-    raisins: {
-      backgroundImage: `url(${raisinsBackground})`,
+    kuraga: {
+      backgroundImage: `url(${kuragaBackground})`,
       width: "60px",
       height: "60px",
       backgroundSize:"cover",
     },
+    raisins: {
+      backgroundImage: `url(${raisinsBackground})`,
+      width: "75px",
+      height: "75px",
+      backgroundSize:"cover",
+    },
+    apple : {
+      backgroundImage: `url(${appleBackground})`,
+      width: "55px",
+      height: "55px",
+      backgroundSize:"cover",
+    },
+    // raisins: {
+    //   backgroundImage: `url(${raisinsBackground})`,
+    //   width: "120px",
+    //   height: "110px",
+    //   backgroundSize:"cover",
+    // },
     
     
   };

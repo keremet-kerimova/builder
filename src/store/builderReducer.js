@@ -1,21 +1,19 @@
 const initialState = {
   ingredients:{
-  cashew:10,
-  dates:10,
-  kiwi:10,
-  null:20,
-  prunes:10,
-  raisins:1,
+    dates:4,
+    kiwi:2,
+    kuraga:3,
+    raisins:8,
+    apple:4,
   },
  price:100,
 };
 const prices = {
-  cashew:1,
-  dates:1,
-  kiwi:1,
-  null:2,
-  prunes:1,
-  raisins:1,
+  dates:2,
+    kiwi:2,
+    kuraga:1,
+    raisins:1,
+    apple:2,
  };
 
 const builderReducer = (state = initialState, action) => {
