@@ -6,7 +6,7 @@ const initialState = {
   null:2,
   prunes:1,
   },
- price:200,
+ price:100,
 };
 const prices = {
   cashew:1,
