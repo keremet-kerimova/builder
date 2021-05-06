@@ -8,14 +8,8 @@ import OrderSummary from "../OrderSummary/OrderSummary";
 import Button from "../../Ul/Button/Button";
 import { useSelector } from "react-redux";
 
+
 const DriedFruitsBuilder = ({ history }) => {
-  const prices = {
-   cashew:1,
-   dates:1,
-   kiwi:1,
-   null:2,
-   prunes:1,
-  };
   const ingredients = useSelector(state => state.ingredients);
   const price = useSelector(state => state.price);
   const [ordering, setOrdering] = useState(false);
@@ -41,22 +35,28 @@ const DriedFruitsBuilder = ({ history }) => {
   function stopOrdering() {
     setOrdering(false);
   }
+   function finishOrdering() {
+     setOrdering(false)
+     //loadDefaults()
+     history.push('./checkout')
+   }
 
-  function finishOrdering() {
-    axios
-    .post('https://builder-6d74a-default-rtdb.firebaseio.com/orders.json',{
-      ingredients: ingredients,
-      price: price,
-      address: "Shopokova kv 4",
-      phone:"0707379480",
-      name:"Keremet Kerimova",
-    })
-    .then(() =>{
-      setOrdering(false);
-      // loadDefaults();
-      history.push('/checkout')
-    })
-  }
+
+  // function finishOrdering() {
+  //   axios
+  //   .post('https://builder-6d74a-default-rtdb.firebaseio.com/default.json',{
+  //     ingredients: ingredients,
+  //     price: price,
+  //     address: "Shopokova kv 4",
+  //     phone:"0707379480",
+  //     name:"Keremet Kerimova",
+  //   })
+  //   .then(() =>{
+  //     setOrdering(false);
+  //     // loadDefaults();
+  //     history.push('/checkout')
+  //   })
+  // }
 
   return (
     <div className={classes.DriedFruitsBuilder}>

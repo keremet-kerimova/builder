@@ -1,7 +1,6 @@
-  
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Order from "./Order/Order";
+import Order from "../Orders/Order/Order";
 import classes from "./Orders.module.css";
 
 const Orders = () => {

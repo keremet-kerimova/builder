@@ -1,11 +1,11 @@
 import React from "react";
 
 import classes from "./DriedFruitsIngredient.module.css";
-import nullBackground from "../../../images/kiwi.svg";
-import kiwiBackground from "../../../images/almond3.svg";
-import prunesBackground from "../../../images/prunes.svg";
-import cashewBackground from "../../../images/foto8.svg";
-import datesBackground from "../../../images/dates.svg";
+import nullBackground from "../../../images/kuraga.png";
+import kiwiBackground from "../../../images/apricot.png";
+import prunesBackground from "../../../images/raisins.png";
+import cashewBackground from "../../../images/apple.png";
+import datesBackground from "../../../images/dates1.png";
 
 
 
@@ -14,19 +14,19 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     cashew : {
       backgroundImage: `url(${cashewBackground})`,
       width: "35px",
-      height: "19px",
+      height: "35px",
       backgroundSize:"cover",
     },
     dates : {
       backgroundImage: `url(${datesBackground})`,
-      width: "25px",
-      height: "25px",
+      width: "45px",
+      height: "45px",
       backgroundSize:"cover",
     },
     kiwi: {
       backgroundImage: `url(${kiwiBackground})`,
-      width: "30px",
-      height: "30px",
+      width: "45px",
+      height: "45px",
       backgroundSize:"cover",
     },
     null: {
@@ -37,8 +37,8 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     },
     prunes: {
       backgroundImage: `url(${prunesBackground})`,
-      width: "44px",
-      height: "20px",
+      width: "60px",
+      height: "60px",
       backgroundSize:"cover",
     },
     
@@ -46,9 +46,9 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
   };
 
   function getPosition(ingredientWidth) {
-    const fruitsDiameter = 380;
+    const fruitsDiameter = 350;
     const fruitsRadius = fruitsDiameter / 2;
-    const ingredientRadius = parseInt(ingredientWidth) / 2;
+    const ingredientRadius = parseInt(ingredientWidth) / 4;
 
     const ingredientTop = Math.round(Math.random() * fruitsDiameter);
     const ingredientLeft = Math.round(Math.random() * fruitsDiameter);

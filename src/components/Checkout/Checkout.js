@@ -1,10 +1,14 @@
-import DriedFruitsPreviews from "../DriedFruitsBuilder/DriedFruitsPreviews/DriedFruitsPreviews";
-import CheckoutForm from "../../components/Checkout/CheckoutForm/ChecoutForm";
+import DriedFruitsPrewiews from "../DriedFruitsBuilder/DriedFruitsPreviews/DriedFruitsPreviews";
+import CheckoutForm from "./CheckoutForm/ChecoutForm";
 import classes from "./Checkout.module.css";
 import axios from "axios";
+import { useSelector } from "react-redux";
 
 
 const Checkout = ({ history }) => {
+  const ingredients = useSelector(state => state.ingredients);
+  const price = useSelector(state => state.price);
+
   function cancelCallback() {
     history.replace('/');
   }
@@ -16,33 +20,21 @@ const Checkout = ({ history }) => {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
-      ingredients: {
-        cashew: 10,
-        dates: 10,
-        kiwi: 10,
-        null: 10,
-        prunes: 10,
-      },
-      price: 100,
+      ingredients: ingredients,
+      price: price,
     }).then(response => {
       history.replace('/');
     });
 
     event.preventDefault();
   }
+
   return (
-       <div>
-        <DriedFruitsPreviews ingredients={{
-           cashew:1,
-           dates:1,
-           kiwi:1,
-           null:2,
-           prunes:1,
-        }} price={150} />
-      <CheckoutForm 
-         cancelCallback={cancelCallback}
-         submitCallback={submitCallback}
-          />
+    <div className={classes.Checkout}>
+      < DriedFruitsPrewiews ingredients={ingredients} price={price} />
+      <CheckoutForm
+        cancelCallback={cancelCallback}
+        submitCallback={submitCallback} />
     </div>
   );
 }

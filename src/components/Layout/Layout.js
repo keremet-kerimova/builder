@@ -11,6 +11,7 @@ const Layout = ({ children }) => {
       <Toolbar openDrawer={() => setDrawerOpen(true)} />
       <Drawer open={drawerOpen} closeDrawer={() => setDrawerOpen(false)} />
       {children}
+      
     </div>
   );
 }
