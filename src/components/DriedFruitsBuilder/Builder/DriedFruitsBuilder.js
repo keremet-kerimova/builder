@@ -10,14 +10,6 @@ import Button from "../../Ul/Button/Button";
 import { useSelector } from "react-redux";
 
 const DriedFruitsBuilder = ({ history }) => {
-  const prices = {
-    tomato: 3.5,
-    salami: 4,
-    greenOlive: .3,
-    blackOlive: .3,
-    redPepper: 2,
-    yellowPepper: 1,
-  }
 
   const ingredients = useSelector(state => state.ingredients);
   const price = useSelector(state => state.price);

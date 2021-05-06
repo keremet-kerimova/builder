@@ -5,6 +5,7 @@ const initialState = {
   kiwi:10,
   null:20,
   prunes:10,
+  raisins:1,
   },
  price:100,
 };
@@ -14,6 +15,7 @@ const prices = {
   kiwi:1,
   null:2,
   prunes:1,
+  raisins:1,
  };
 
 const builderReducer = (state = initialState, action) => {

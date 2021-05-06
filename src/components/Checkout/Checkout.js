@@ -22,7 +22,7 @@ const Checkout = ({ history }) => {
       phone: data.get('phone'),
       ingredients: ingredients,
       price: price,
-    }).then(response => {
+  }).then(response => {
       history.replace('/');
     });
 
@@ -40,3 +40,5 @@ const Checkout = ({ history }) => {
 }
  
 export default Checkout;
+
+

@@ -6,6 +6,7 @@ import kiwiBackground from "../../../images/apricot.png";
 import prunesBackground from "../../../images/raisins.png";
 import cashewBackground from "../../../images/apple.png";
 import datesBackground from "../../../images/dates1.png";
+import raisinsBackground from "../../../images/raisins.png";
 
 
 
@@ -19,24 +20,30 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     },
     dates : {
       backgroundImage: `url(${datesBackground})`,
-      width: "45px",
-      height: "45px",
+      width: "55px",
+      height: "55px",
       backgroundSize:"cover",
     },
     kiwi: {
       backgroundImage: `url(${kiwiBackground})`,
-      width: "45px",
-      height: "45px",
+      width: "55px",
+      height: "55px",
       backgroundSize:"cover",
     },
     null: {
       backgroundImage: `url(${nullBackground})`,
-      width: "35px",
-      height: "35px",
+      width: "60px",
+      height: "60px",
       backgroundSize:"cover",
     },
     prunes: {
       backgroundImage: `url(${prunesBackground})`,
+      width: "65px",
+      height: "65px",
+      backgroundSize:"cover",
+    },
+    raisins: {
+      backgroundImage: `url(${raisinsBackground})`,
       width: "60px",
       height: "60px",
       backgroundSize:"cover",

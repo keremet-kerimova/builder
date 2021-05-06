@@ -6,7 +6,8 @@ const OrderSummary = ({ ingredients, price }) => {
     dates:"Datess",
     kiwi:"Kiwes",
     null:"Nulls",
-    prunes:"Prunes"
+    prunes:"Prunes",
+    raisins:"Raisins"
     
   }
   const results = Object.keys(ingredients)
