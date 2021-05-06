@@ -12,6 +12,7 @@
   margin-bottom: 1rem;
   border-radius: 100%;
   background-size: 100%;
+  background-size: cover;
   
     padding-top: 10px;
     padding-bottom: 10px;
@@ -20,17 +21,19 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-image: url(../../../images/plate2.svg); 
+    background-image: url(../../../images/plate.png); 
 }
 .ingredients {
   width: 580px;
-  height: 480px;
+  height: 500px;
   border-radius: 100%;
   position: relative;
+  /* margin-left: 110px; */
 }
 
 .price {
   font-size: 2rem;
+  font-weight: bold;
  
   margin-top: 5px;
   display: flex;
