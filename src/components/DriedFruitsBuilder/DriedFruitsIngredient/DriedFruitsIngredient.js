@@ -51,9 +51,9 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
   };
 
   function getPosition(ingredientWidth) {
-    const fruitsDiameter = 350;
+    const fruitsDiameter = 380;
     const fruitsRadius = fruitsDiameter / 2;
-    const ingredientRadius = parseInt(ingredientWidth) / 4;
+    const ingredientRadius = parseInt(ingredientWidth) / 2;
 
     const ingredientTop = Math.round(Math.random() * fruitsDiameter);
     const ingredientLeft = Math.round(Math.random() * fruitsDiameter);

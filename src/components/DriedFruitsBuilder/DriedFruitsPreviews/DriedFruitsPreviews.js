@@ -15,7 +15,6 @@ const DriedFruitsPreviews = ({ ingredients, price }) => {
        <div className={classes.fruits}> 
         <div
           className={classes.ingredients}
-         
        >
           {result}
         </div> 
