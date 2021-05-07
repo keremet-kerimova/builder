@@ -2,11 +2,13 @@ import DriedFruitsPrewiews from "../DriedFruitsPreviews/DriedFruitsPreviews";
 import DriedFruitsControls from "../DriedFruitsControls/Controls/DriedFruitsControls";
 import classes from "./DriedFruitsBuilder.module.css";
 import { useEffect, useState } from "react";
+import axios from "../../axios";
 import Modal from "../../Ul/Modal/Modal";
 import OrderSummary from "../OrderSummary/OrderSummary";
 import Button from "../../Ul/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
-import { load } from "../../../store/actions/builder"
+import { load } from "../../../store/actions/builder";
+import withAxios from "../withAxios";
 
 
 const DriedFruitsBuilder = ({ history }) => {
@@ -71,4 +73,4 @@ const DriedFruitsBuilder = ({ history }) => {
   );
 }
 
-export default DriedFruitsBuilder;
+export default withAxios(DriedFruitsBuilder, axios);

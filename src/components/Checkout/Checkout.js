@@ -1,10 +1,9 @@
 import  DriedFruitsPreviews from "../DriedFruitsBuilder/DriedFruitsPreviews/DriedFruitsPreviews";
 import CheckoutForm from "./CheckoutForm/ChecoutForm";
 import classes from "./Checkout.module.css";
-import axios from "axios";
+import axios from "../../axios";
 import { useSelector } from "react-redux";
-
-
+import withAxios from "../withAxios";
 
 const Checkout = ({ history }) => {
   const ingredients = useSelector(state => state.builder.ingredients);
@@ -40,5 +39,5 @@ const Checkout = ({ history }) => {
   );
 }
  
-export default Checkout;
+export default withAxios(Checkout, axios);;
 
