@@ -1,32 +1,34 @@
+import { ADD_INGREDIENT, REMOVE_INGREDIENT, SET_INGREDIENTS } from "../actions/types";
+
 const initialState = {
-  ingredients:{
-    dates:4,
-    kiwi:2,
-    kuraga:3,
-    raisins:8,
-    apple:4,
+  ingredients: {
   },
- price:100,
+  price: 0,
 };
 const prices = {
-  dates:2,
+    apple:2,
+    apricot:2,
+    dates:2,
     kiwi:2,
     kuraga:1,
     raisins:1,
-    apple:2,
- };
+};
 
-const builderReducer = (state = initialState, action) => {
+const builder = (state = initialState, action) => {
   const newState = { ...state };
 
   switch (action.type) {
-    case "ADD_INGREDIENT":
+    case ADD_INGREDIENT:
       newState.ingredients[action.ingredient]++;
       newState.price += prices[action.ingredient];
       break;
-    case "REMOVE_INGREDIENT":
+    case REMOVE_INGREDIENT:
       newState.ingredients[action.ingredient]--;
       newState.price -= prices[action.ingredient];
+      break;
+    case SET_INGREDIENTS:
+      newState.ingredients = action.data.ingredients;
+      newState.price = action.data.price;
       break;
   
     default:
@@ -36,4 +38,4 @@ const builderReducer = (state = initialState, action) => {
   return newState;
 }
 
-export default builderReducer;
+export default builder;

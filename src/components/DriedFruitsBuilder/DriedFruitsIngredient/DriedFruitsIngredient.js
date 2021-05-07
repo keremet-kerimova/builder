@@ -1,13 +1,12 @@
 import React from "react";
 
 import classes from "./DriedFruitsIngredient.module.css";
-import datesBackground from "../../../images/dates.png";
+import datesBackground from "../../../images/dates1.png";
 import kiwiBackground from "../../../images/kiwi.png";
 import kuragaBackground from "../../../images/kuraga.png";
 import raisinsBackground from "../../../images/raisins.png";
 import appleBackground from "../../../images/apple.png";
-
-// import apricotBackground from "../../../images/apricot.png"
+import apricotBackground from "../../../images/apricot.png"
 
 const DriedFruitsIngredient = ({ type, fixed }) => {
   const types = {
@@ -31,8 +30,8 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     },
     raisins: {
       backgroundImage: `url(${raisinsBackground})`,
-      width: "75px",
-      height: "75px",
+      width: "55px",
+      height: "55px",
       backgroundSize:"cover",
     },
     apple : {
@@ -41,12 +40,12 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
       height: "55px",
       backgroundSize:"cover",
     },
-    // raisins: {
-    //   backgroundImage: `url(${raisinsBackground})`,
-    //   width: "120px",
-    //   height: "110px",
-    //   backgroundSize:"cover",
-    // },
+    apricots: {
+      backgroundImage: `url(${apricotBackground})`,
+      width: "60px",
+      height: "60px",
+      backgroundSize:"cover",
+    },
     
     
   };

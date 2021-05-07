@@ -1,24 +1,24 @@
-import axios from "axios";
-import React, { useEffect } from "react";
-import { useState } from "react";
-import Modal from "../../Ul/Modal/Modal";
-import classes from "./DriedFruitsBuilder.module.css";
+import DriedFruitsPrewiews from "../DriedFruitsPreviews/DriedFruitsPreviews";
 import DriedFruitsControls from "../DriedFruitsControls/Controls/DriedFruitsControls";
-import DriedFruitsPreviews from "../DriedFruitsPreviews/DriedFruitsPreviews";
+import classes from "./DriedFruitsBuilder.module.css";
+import { useEffect, useState } from "react";
+import Modal from "../../Ul/Modal/Modal";
 import OrderSummary from "../OrderSummary/OrderSummary";
 import Button from "../../Ul/Button/Button";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { load } from "../../../store/actions/builder"
+
 
 const DriedFruitsBuilder = ({ history }) => {
-
-  const ingredients = useSelector(state => state.ingredients);
-  const price = useSelector(state => state.price);
-
+  const dispatch = useDispatch();
+  const ingredients = useSelector(state => state.builder.ingredients);
+  const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
 
-
+  useEffect(() => dispatch(load()), []);
 
   
+
   // useEffect(loadDefaults, []);
 
   // function loadDefaults() {
@@ -28,13 +28,12 @@ const DriedFruitsBuilder = ({ history }) => {
   //       setPrice(response.data.price);
 
   //       // For arrays
-  //       setIngredients(Object.values(response.data.ingredients));
+  //       // setIngredients(Object.values(response.data.ingredients));
   //       // For objects
   //       setIngredients(response.data.ingredients);
   //     });
   // }
 
- 
   function startOrdering() {
     setOrdering(true);
   }
@@ -49,26 +48,9 @@ const DriedFruitsBuilder = ({ history }) => {
     history.push('/checkout');
   }
 
-  //  function finishOrdering() {
-  //   axios
-  //     .post('https://builder-6d74a-default-rtdb.firebaseio.com/orders.json',{
-  //       ingredients: ingredients,
-  //       price: price,
-  //       address: "Shopokova kv 4",
-  //       phone:"0707379480",
-  //       name:"Keremet Kerimova",
-  //     })
-  //     .then(() =>{
-  //       setOrdering(false);
-  //       // loadDefaults();
-  //       history.push('/checkout')
-  //     })
-    
-  //  }
-
   return (
     <div className={classes.DriedFruitsBuilder}>
-      <DriedFruitsPreviews
+      <DriedFruitsPrewiews
         ingredients={ingredients}
         price={price} />
       <DriedFruitsControls
@@ -78,14 +60,13 @@ const DriedFruitsBuilder = ({ history }) => {
       <Modal
         show={ordering}
         cancel={stopOrdering}>
-        <OrderSummary
-          ingredients={ingredients}
-          price={price}
+          <OrderSummary
+            ingredients={ingredients}
+            price={price}
             />
           <Button onClick={finishOrdering} green>Checkout</Button>
           <Button onClick={stopOrdering}>Cancel</Button>
         </Modal>
-        
     </div>
   );
 }
