@@ -7,7 +7,7 @@ export const set = (orders) => ({
 });
 
 export const load = () => {
-  return (dispatch) => axios.get('/orders.json')
+  return (dispatch) => axios.get('./orders.json')
     .then(response => {
       const newOrders = Object.keys(response.data).map(id => {
         return {

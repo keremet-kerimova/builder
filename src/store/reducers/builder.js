@@ -3,7 +3,7 @@ import { ADD_INGREDIENT, REMOVE_INGREDIENT, SET_INGREDIENTS } from "../actions/t
 const initialState = {
   ingredients: {
   },
-  price: 0,
+  price: 100,
 };
 const prices = {
     apple:2,
