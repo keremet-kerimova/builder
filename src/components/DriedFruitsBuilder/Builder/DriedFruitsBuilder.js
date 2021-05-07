@@ -18,7 +18,7 @@ const DriedFruitsBuilder = ({ history }) => {
   const [ordering, setOrdering] = useState(false);
 
   useEffect(() => dispatch(load()), []);
- console.log(withAxios)
+
   
 
   // useEffect(loadDefaults, []);
