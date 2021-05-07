@@ -39,5 +39,5 @@ const Checkout = ({ history }) => {
   );
 }
  
-export default withAxios(Checkout, axios);;
+export default withAxios(Checkout, axios);
 
