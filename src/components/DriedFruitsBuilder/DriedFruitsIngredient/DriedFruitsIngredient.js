@@ -3,7 +3,7 @@ import React from "react";
 import classes from "./DriedFruitsIngredient.module.css";
 import datesBackground from "../../../images/dates1.png";
 import kiwiBackground from "../../../images/kiwi.png";
-import kuragaBackground from "../../../images/kuraga.png";
+import kuragaBackground from "../../../images/kuragas.png";
 import raisinsBackground from "../../../images/raisins.png";
 import appleBackground from "../../../images/apple.png";
 import apricotBackground from "../../../images/apricot.png"
@@ -40,7 +40,7 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
       height: "55px",
       backgroundSize:"cover",
     },
-    apricots: {
+    apricot: {
       backgroundImage: `url(${apricotBackground})`,
       width: "35px",
       height: "35px",
