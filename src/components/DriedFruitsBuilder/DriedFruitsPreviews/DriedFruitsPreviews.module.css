@@ -6,11 +6,11 @@
   justify-content: center;
 }
 .fruits {
-  width: 400px;
+  width: 500px;
   height: 400px;
   margin-right: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 100%;
+  margin-bottom: 1rem; 
+  border-radius: 100%; 
   background-size: 100%;
   background-size: cover;
   
@@ -21,11 +21,11 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-image: url(../../../images/plate.png); 
+    background-image: url(../../../images/p.png); 
 }
 .ingredients {
-  width: 580px;
-  height: 500px;
+  width: 350px;
+  height: 450px;
   border-radius: 100%;
   position: relative;
   /* margin-left: 110px; */

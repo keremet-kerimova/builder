@@ -12,26 +12,26 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
   const types = {
     dates : {
       backgroundImage: `url(${datesBackground})`,
-      width: "35px",
+      width: "85px",
       height: "65px",
       backgroundSize:"cover",
     },
     kiwi: {
       backgroundImage: `url(${kiwiBackground})`,
-      width: "35px",
-      height: "35px",
+      width: "95px",
+      height: "85px",
       backgroundSize:"cover",
     },
     kuraga: {
       backgroundImage: `url(${kuragaBackground})`,
-      width: "35px",
-      height: "35px",
+      width: "70px",
+      height: "65px",
       backgroundSize:"cover",
     },
     raisins: {
       backgroundImage: `url(${raisinsBackground})`,
-      width: "35px",
-      height: "35px",
+      width: "65px",
+      height: "55px",
       backgroundSize:"cover",
     },
     apple : {
@@ -42,8 +42,8 @@ const DriedFruitsIngredient = ({ type, fixed }) => {
     },
     apricot: {
       backgroundImage: `url(${apricotBackground})`,
-      width: "35px",
-      height: "35px",
+      width: "75px",
+      height: "65px",
       backgroundSize:"cover",
     },
     
