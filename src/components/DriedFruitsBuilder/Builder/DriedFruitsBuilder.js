@@ -66,7 +66,7 @@ const DriedFruitsBuilder = ({ history }) => {
             ingredients={ingredients}
             price={price}
             />
-          <Button onClick={finishOrdering} green>Checkout</Button>
+          <Button onClick={finishOrdering} green="green">Checkout</Button>
           <Button onClick={stopOrdering}>Cancel</Button>
         </Modal>
     </div>
