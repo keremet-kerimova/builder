@@ -20,3 +20,7 @@ export const load = () => {
   return (dispatch) => axios.get('./default.json')
     .then(response => dispatch(set(response.data)))
 };
+
+
+
+

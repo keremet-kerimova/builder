@@ -19,22 +19,7 @@ const DriedFruitsBuilder = ({ history }) => {
 
   useEffect(() => dispatch(load()), []);
 
-  
 
-  // useEffect(loadDefaults, []);
-
-  // function loadDefaults() {
-  //   axios
-  //     .get('https://builder-a51d0-default-rtdb.firebaseio.com/default.json')
-  //     .then(response => {
-  //       setPrice(response.data.price);
-
-  //       // For arrays
-  //       // setIngredients(Object.values(response.data.ingredients));
-  //       // For objects
-  //       setIngredients(response.data.ingredients);
-  //     });
-  // }
 
   function startOrdering() {
     setOrdering(true);
