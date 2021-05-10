@@ -17,7 +17,7 @@ const DriedFruitsBuilder = ({ history }) => {
   const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
 
-  useEffect(() => dispatch(load()), []);
+  useEffect(() => dispatch(load()), [dispatch]);
 
 
 
