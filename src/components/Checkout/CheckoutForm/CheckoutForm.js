@@ -17,7 +17,7 @@ const CheckoutForm = ({ cancelCallback, submitCallback }) => {
         <input type="text" name="phone" id="phone" required pattern="0[0-9]{9}" />
       </div>
       <Button>Checkout</Button>
-      <Button>onClick={cancelCallback}Cancel</Button>
+      <Button onClick={cancelCallback}>Cancel</Button>
     </form>
   );
 }

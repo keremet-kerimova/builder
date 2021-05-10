@@ -13,29 +13,27 @@
   border-radius: 100%; 
   background-size: 100%;
   background-size: cover;
-  
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-image: url(../../../images/p.png); 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(../../../images/p.png); 
 }
 .ingredients {
   width: 350px;
   height: 450px;
   border-radius: 100%;
   position: relative;
-  /* margin-left: 110px; */
 }
 
 .price {
   font-size: 2rem;
   font-weight: bold;
- 
-  margin-top: 5px;
+  margin-bottom: 50px;
+  margin-top: 1px;
   display: flex;
   justify-content: center;
  
@@ -44,9 +42,3 @@
   color: black;
 
 }
-/* }
-@media (max-width: 609px) {
-  .ingredients {
-    margin-top:-150px ;
-  }
-} */

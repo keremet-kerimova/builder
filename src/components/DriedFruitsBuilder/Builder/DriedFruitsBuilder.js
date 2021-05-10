@@ -47,7 +47,7 @@ const DriedFruitsBuilder = ({ history }) => {
   function finishOrdering() {
     setOrdering(false);
     // loadDefaults();
-    history.push('/checout');
+    history.push('/checkout');
   }
 
   return (
