@@ -8,7 +8,8 @@
   padding: .5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   transition: transform .3s ease-out;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Satisfy', cursive;
+  /* font-family: 'Julius Sans One', sans-serif; */
 }
 
 @media (max-width: 800px) {

@@ -9,7 +9,8 @@
   font-size: 1.5rem;
   cursor: pointer;
   margin: 10px .1rem;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Satisfy', cursive;
+  /* font-family: 'Julius Sans One', sans-serif; */
     font-size: 22px;
     font-weight: unset;
 } 
@@ -31,39 +32,3 @@
 .green:not(:disabled):hover {
   background-color: rgb(49, 172, 0);
 }
- /* .Button::before{
-  background-color: plum;
-  transform: scaleY(0);
-  transform-origin: 50% 100%;
-  transition-property: transform;
-  transition-duration: .3s;
-  border-radius: 6px;
- } */
-
- /* .Button{
-  width: 25px;
-  height: 25px;
-  border: 1px solid #fff;
-  color: #000;
-  background-color: #fff;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 18px;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  transition-duration: .3s;
-  margin: 5px;
-}
-.Button:not(:disabled):hover{
-    /* content: "";
-    position: absolute; */
-    
-    /* background-color: #f3f3f3;
-    transform: scaleY(2);
-    transform: scaleX(2);
-    /* transform-origin: 50% 100%; */
-    /* transition-property: transform;
-    transition-duration: .3s;
-    border-radius: 6px;
-} */

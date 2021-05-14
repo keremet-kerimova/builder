@@ -6,7 +6,8 @@
   padding: 11px;
   color: black; 
   line-height: 1.1;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Satisfy', cursive;
+  /* font-family: 'Julius Sans One', sans-serif; */
   font-size: 20px;
   transition: all .2s ease-in-out;
 }

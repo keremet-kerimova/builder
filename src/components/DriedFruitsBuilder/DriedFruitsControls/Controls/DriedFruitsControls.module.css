@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap'); 
+ 
 .DriedFruitsControls {
   flex: 0 0 250px;
   border-radius: 2rem;
@@ -5,12 +7,15 @@
   background-color: #f6d2d9;
   color: black;
   text-align: center;
+  /* font-family: 'Satisfy', cursive; */
   font-family: 'Julius Sans One', sans-serif;
   font-weight: initial;
+
   
 }
 strong{
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Satisfy', cursive;
+  /* font-family: 'Julius Sans One', sans-serif; */
   font-size: 28px;
   font-weight: unset;
 }

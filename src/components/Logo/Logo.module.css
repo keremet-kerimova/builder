@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
   .Logo {
     display: flex;
     align-items: center;
@@ -12,8 +16,18 @@
 
 
   }
-  div{
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 26px;
+  .Fonts{
+    /* font-family: 'Merienda', cursive; */
+    font-family: 'Satisfy', cursive;
+    /* font-family: 'Julius Sans One', sans-serif; */
+    font-size: 32px;
     font-weight: unset;
+  }
+
+
+  @media (max-width: 600px) {
+    .Fonts{
+      font-size: 25px;
+      margin-top: 10px;
+    }
   }

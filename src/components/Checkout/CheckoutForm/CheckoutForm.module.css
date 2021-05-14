@@ -15,7 +15,7 @@
   }
   .CheckoutForm > div > input {
     border-radius: 1rem;
-    border: 1px solid lightgray;
+    border: 1px solid tan;
     font-size: 1.5rem;
     padding: 0 1rem;
   }
@@ -23,3 +23,12 @@
     outline: none;
     border-color: darkgray;
   }
+/* 
+  @media (min-width: 400px) {
+    .CheckoutForm {
+      width: 450px;
+      flex-wrap: wrap;
+    }
+  } */
+
+  
