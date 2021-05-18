@@ -16,8 +16,11 @@ const CheckoutForm = ({ cancelCallback, submitCallback }) => {
         <label htmlFor="phone">Phone</label>
         <input type="text" name="phone" id="phone" required pattern="0[0-9]{9}" />
       </div>
+      <div className={classes.Button}>
       <Button>Checkout</Button>
       <Button onClick={cancelCallback}>Cancel</Button>
+      </div>
+
     </form>
   );
 }

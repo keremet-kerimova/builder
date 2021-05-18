@@ -1,5 +1,5 @@
 .DriedFruitsPreviews {
-  flex: 0 0 500px;
+  flex: 0 0 400px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
@@ -7,10 +7,8 @@
   align-items: center;
 }
 .fruits {
-  width: 530px;
-  height: 416px;
-  /* width: 520px;
-  height: 440px; */
+  width: 563px;
+  height: 437px;
   margin-bottom: 1rem; 
   border-radius: 100%; 
   background-size: 100%;

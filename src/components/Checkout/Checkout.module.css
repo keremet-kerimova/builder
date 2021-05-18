@@ -1,11 +1,11 @@
-.Checkout {
-    width: 575px;
-    margin: 3rem auto;
-  
+/* .Checkout {
+    width: 470px;
+    margin: 0  auto;
   }
-  /* @media (min-width: 400px) {
-    .Checkout {
-      width: 510px;
-      margin-left: -15px;
-    }
-  } */
+  */
+
+
+.Checkout{
+  width: 504px;
+  margin: 0 auto;
+}
