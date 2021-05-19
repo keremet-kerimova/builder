@@ -9,3 +9,12 @@
   width: 504px;
   margin: 0 auto;
 }
+
+
+@media (max-width: 500px) {
+  .Checkout {
+    width: 488px;
+    margin-left: -50px;
+   
+  }
+}

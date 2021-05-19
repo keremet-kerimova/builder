@@ -23,10 +23,10 @@
     outline: none;
     border-color: darkgray;
   }
-/* 
-  @media (min-width: 400px) {
+
+  @media (max-width: 500px) {
     .CheckoutForm {
-      width: 450px;
-      flex-wrap: wrap;
+      margin-left: 40px;
+     
     }
-  } */
+  }

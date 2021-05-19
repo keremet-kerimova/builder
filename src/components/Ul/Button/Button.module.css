@@ -1,9 +1,8 @@
 .Button {
   border: 0;
-  
   padding: 0 1rem;
   border-radius: 1rem;
-  background-color:#e97fb9;
+  background-color: #f68fa9;
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
@@ -15,7 +14,7 @@
     font-weight: unset;
 } 
  .Button:not(:disabled):hover {
-  background-color:#e97fb9;
+  background-color:#da2f8d;
   
 
 } 
@@ -25,6 +24,7 @@
 .Button:disabled {
   opacity: .5;
 }
+
 
 .green {
   background-color: rgb(137, 255, 133);
