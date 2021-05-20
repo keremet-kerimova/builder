@@ -14,8 +14,8 @@
 
 .NavItem a:hover {
   border-color: plum;
-  background-color: hsla(0,0%,100%,.3);
-}
+  background-color: rgba(61,60,60,.1);; 
+ }
 .NavItem a:active,
 .NavItem a.active {
   border-color: plum;

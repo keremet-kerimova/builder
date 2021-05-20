@@ -5,23 +5,23 @@
   font-weight: bold;
   font-size: 1.3rem;
   margin-top: 5px;
-  /* margin: .8rem 10px; */
 }
 .Control div{
   background-size: cover;
-  /* border-radius: 100%; */
+ 
+ /* border-radius: 100%; */
   margin: 10px;
   margin-top: 15px;
 }
 .Control .ingredient div:hover{
   transform: none;
 }
-/* .Control .ingredient div:hover{
-  background-color;
-}  */
-
-
 .Control .ingredient div {
   position: static;
   margin: 0 .5rem;
 }
+.Control button{
+  font-family: 'Julius Sans One', sans-serif; 
+}
+
+
