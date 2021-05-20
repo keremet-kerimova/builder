@@ -3,12 +3,13 @@
   top: 20%;
   left: 40%;
   z-index: 1;
-  width: 40%;
+  width: 30%;
   background-color: white;
   padding: .5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   transition: transform .3s ease-out;
   font-family: 'Satisfy', cursive;
+  border: 5px ridge violet;
   /* font-family: 'Julius Sans One', sans-serif; */
 }
 
