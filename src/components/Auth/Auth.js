@@ -9,7 +9,7 @@ import { Redirect, useLocation } from "react-router-dom";
 
 export default withAxios(() => {
   const dispatch = useDispatch();
-  const [ method, setMethod ] = useState(null);
+  const [ method, setMethod ] = useState("singin");
   const { loading, error, token } = useSelector(state => state.auth);
   const location = useLocation();
 
