@@ -8,10 +8,8 @@
 }
 .Control div{
   background-size: cover;
- 
- /* border-radius: 100%; */
-  margin: 10px;
-  margin-top: 15px;
+  margin: 2px ;
+  
 }
 .Control .ingredient div:hover{
   transform: none;

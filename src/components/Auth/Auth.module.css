@@ -13,7 +13,3 @@
     border: 2px solid rgb(243, 148, 164);
     font-size: 1.3rem;
   }
-  .Auth input::placeholder{
-    font-size: 1.5rem;
-    color: rgb(71, 73, 75);
-  }
