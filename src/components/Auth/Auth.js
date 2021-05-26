@@ -51,7 +51,7 @@ export default withAxios(() => {
   const [, redirect] = location.search.split("?");
   let redirectOutput = null;
   if (token !== null) {
-    redirectOutput = <Redirect to={"/" + redirect ? redirect : ""} />;
+    redirectOutput = <Redirect to={"/" + redirect ? redirect : "/"} />;
   }
 
   return (
